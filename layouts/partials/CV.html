@@ -1,0 +1,26 @@
+{{ "<!-- About Section -->" | safeHTML }}
+<section class="failure" id="CV">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>{{ with .Site.Params.CV.title }}{{.}}{{ end }}</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-8 col-lg-offset-2 text-justify">
+            <div class="about-description">
+            <p>{{ with .Site.Params.about.description }}{{ . | markdownify }}{{ end }}</p>
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            <a href="{{ with .Site.Params.CV.button.src }}{{.}}{{ end }}" class="btn btn-lg btn-outline">
+              <i class="fa fa-{{ with .Site.Params.CV.button.icon }}{{.}}{{end}}"></i> {{ with .Site.Params.CV.button.text }}{{ . }}{{ end }}
+            </a>
+          </div>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,117 @@
+# Site settings
+baseurl = "https://example.org/"
+languageCode = "en-us"
+title = "Nick Tackes"
+theme = "hugo-freelancer-theme"
+
+
+[params]
+
+    # You can use Markdown syntax for urls [text](//url.to/source) for
+    # most longer texts.
+
+    # To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+    name = "Mr. Hugo"
+    description = "My awesome description"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email youself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    email = "jn2127@columbia.edu"
+
+    # Custom assets
+	custom_css = []
+	custom_js  = []
+
+    [params.navigation]
+        brand = "Nick Tackes"
+
+
+    [params.header]
+        # Copy your own image into './static/img/'' if you wish
+        image = "NTprofile1.jpg"
+        name = "Nick Tackes"
+        subtitle = ""
+
+
+    [params.portfolio]
+        # All projects defined in their own files. You can find example projects
+        # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+        # at the root of this Hugo site.
+        # For more informtion take a look at the README.
+        title = "Research"
+
+        [params.portfolio.modal]
+            link = "Link"
+            date = "Date"
+            category = "Category"
+            buttontext = "Close"
+
+
+    [params.about]
+        title = "About"
+        description = "I am an ethnographer of healing and religion. My current research addresses self-help and -care as practiced by two Hindu groups in contemporary North India: the All World Gayatri Pariwar (AWGP), an organization that pursues wellbeing through community-oriented social service, several religious rites that they claim have scientific backing, and the life and works of their founder Shriram Sharma, the presumed author of some 3200 books; and the patrons of the products and services of Baba Ramdev, whose Patanjali company deals in everything from yoga to instant noodles to swadeshi SIM cards. To this end, I work between Religion and Medical Anthropology.<br><br>I am currently a third-year PhD student in the Religion Department of Columbia University."
+
+    [params.CV]
+        title= "C.V."
+
+        [params.CV.button]
+            text = "Download CV"
+            src = "/static/documents/tackes-cv-11-26-2018.pdf"
+            icon = "download"
+
+
+    [params.contact]
+        title = "Contact"
+
+        # 'error' defines error messages for invalid inputs
+        [params.contact.form.name]
+            text = "Name"
+            error = "Please enter your name."
+
+        [params.contact.form.email]
+            text = "Email Address"
+            error = "Please enter your email address."
+
+        [params.contact.form.message]
+            text = "Message"
+            error = "Please enter a message."
+
+        [params.contact.form.button]
+            text = "Send"
+
+
+    [params.footer]
+        copyright = "(c) 2018 Nick Tackes"
+
+        [params.footer.location]
+            title = ""
+            # Postal address (add as many lines as necessary)
+            address = ["", "", ""]
+
+        [params.footer.social]
+            title = ""
+            # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+            # for more icons. The icons are represented by their corresponding
+            # CSS class.
+            [[params.footer.social.networks]]
+                icon = "fa-facebook"
+                link = "//facebook.com/nicktackes"
+
+            [[params.footer.social.networks]]
+                icon = "fa-linkedin"
+                link=  "//linkedin.com/in/jtackes/"
+
+
+        [params.footer.credits]
+            title = ""
+            text = ""
