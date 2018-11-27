@@ -38,8 +38,9 @@
                     <br>
                     <div id="success"></div>
                     <div class="row">
-                        <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-lg btn-outline">{{ with .Site.Params.contact.form.button.text }}{{.}}{{ end }}</button>
+                        <div class="form-group col-lg-8 col-lg-offset-2">
+                            <button style="display: inline;" type="submit" class="btn btn-lg btn-outline">{{ with .Site.Params.contact.form.button.text }}{{.}}{{ end }}</button>
+                            <p style="display: inline; vertical-align: text-top; margin-left: 25px;">or, email me at <a href="mailto:jnt2127@columbia.edu">jnt2127@columbia.edu</a></p>
                         </div>
                     </div>
                 </form>
