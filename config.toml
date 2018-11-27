@@ -40,7 +40,7 @@ theme = "hugo-freelancer-theme"
         # Copy your own image into './static/img/'' if you wish
         image = "NTprofile1.jpg"
         name = "Nick Tackes"
-        subtitle = ""
+        subtitle = "PhD Student, Columbia University"
 
 
     [params.portfolio]
