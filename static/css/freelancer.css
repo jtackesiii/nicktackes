@@ -22,7 +22,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: #e55d4e;
 }
 
 h1,
@@ -62,7 +62,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #eee;
-    background-color: #18bc9c;
+    background-color: rgba(229,93,78,0.36);
 }
 
 hr.star-primary {
@@ -81,7 +81,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #eee;
-    background: #18bc9c;
+    background: linear-gradient(180deg, rgba(44, 62, 80, 1) 15%, rgba(229,93,78,0.36) 100%);
 }
 
 header .container {
@@ -182,7 +182,8 @@ section h2 {
 
 section.success {
     color: #eee;
-    background: #18bc9c;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, rgba(44, 62, 80, 1) 15%, rgba(229,93,78,0.36) 100%);
 }
 
 section.success a,
@@ -205,7 +206,7 @@ section.failure a:focus,
 section.failure a:active,
 section.failure a.active {
     outline: 0;
-    color: #18bc9c;
+    color: rgba(229,93,78,0.36);
 }
 
 @media(max-width:767px) {
@@ -235,8 +236,8 @@ section.failure a.active {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 2px #18bc9c;
-    color: #18bc9c;
+    border: solid 2px rgba(229,93,78,0.36);
+    color: rgba(229,93,78,0.36);
     background: none;
 }
 
@@ -279,7 +280,8 @@ section.failure a.active {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(24,188,156,.9);
+    background: #2c3e50;
+    border-radius: 25px;
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -332,8 +334,8 @@ section.failure a.active {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 2px #18bc9c;
-    color: #18bc9c;
+    border: solid 2px #dea29c;
+    color: #dea29c;
     background: none;
 }
 
@@ -386,7 +388,7 @@ section.failure a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: rgba(229,93,78,0.36);
 }
 
 form .row:first-child .floating-label-form-group {
