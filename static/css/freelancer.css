@@ -96,15 +96,14 @@ header img {
 
 header .intro-text .name {
     display: block;
-    text-transform: uppercase;
     font-family: 'Quicksand' sans-serif;
     /* !Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; */
-    font-size: 2em;
-    font-weight: 700;
+    font-size: 1.25em;
+    font-weight: 500;
 }
 
 header .intro-text .skills {
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: 300;
 }
 

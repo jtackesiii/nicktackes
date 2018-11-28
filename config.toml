@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://nicktackes.com/"
+baseurl = "https://nicktackes.com/"
 languageCode = "en-us"
 title = "Nick Tackes"
 theme = "hugo-freelancer-theme"
