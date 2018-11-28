@@ -98,12 +98,12 @@ header .intro-text .name {
     display: block;
     font-family: 'Quicksand' sans-serif;
     /* !Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; */
-    font-size: 1.25em;
+    font-size: 2em;
     font-weight: 500;
 }
 
 header .intro-text .skills {
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: 300;
 }
 
@@ -114,7 +114,7 @@ header .intro-text .skills {
     }
 
     header .intro-text .name {
-        font-size: 4.75em;
+        font-size: 3em;
     }
 
     header .intro-text .skills {
