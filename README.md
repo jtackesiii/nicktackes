@@ -4,4 +4,4 @@ This is my professional website. I built it through HUGO with the [Freelancer th
 
 TODO:
 - fix modal buttons
-- resize profile photo
+- add research photo captions

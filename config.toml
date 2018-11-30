@@ -66,7 +66,7 @@ theme = "hugo-freelancer-theme"
 
         [params.CV.button]
             text = "Download CV"
-            src = "site/static/documents/2018-11-26-tackes-cv.pdf"
+            src = "/documents/2018-11-26-tackes-cv.pdf"
             icon = "download"
 
 
