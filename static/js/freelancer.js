@@ -35,3 +35,8 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+// Hides modals link button if {{ .link }} = "noButton"
+$(function() {
+  $('.noButton').hide();
+});
