@@ -26,7 +26,7 @@ theme = "hugo-freelancer-theme"
     # - send a dummy email youself to confirm your account
     # - click the confirm link in the email from www.formspree.io
     # - you're done. Happy mailing!
-    email = "jn2127@columbia.edu"
+    email = "jnt2127@columbia.edu"
 
     # Custom assets
 	custom_css = []
