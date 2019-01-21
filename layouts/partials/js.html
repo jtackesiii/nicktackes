@@ -12,8 +12,6 @@
 {{ "<!-- Custom Theme JavaScript -->" | safeHTML }}
 <script src="{{ .Site.BaseURL }}js/freelancer.js"></script>
 {{ "<!-- Custom JavaScript files -->" | safeHTML }}
-<script src="{{ .Site.BaseURL }}js/timeline.js"></script>
-
 {{ range .Site.Params.custom_js }}
 <script src="{{ . | absURL }}"></script>
 {{ end }}

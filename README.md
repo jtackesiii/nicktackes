@@ -1,3 +1,3 @@
-# Classroom
+# nicktackes.com
 
-This is a sample site for a web-interactive course.
+This is my professional website. I built it through HUGO with the [Freelancer theme](https://github.com/digitalcraftsman/hugo-freelancer-theme)
