@@ -6,7 +6,5 @@ This is my professional website. I built it through HUGO with the [Freelancer th
 ToDo:
  - I want to be able to process my CV changes from the "CV" project so that they are reflected in the CV partial of my professional website, including an updated PDF file.
    - to do this:
-     - edit process.ps1
-       - edit output folders for html and pdf
      - edit html template
        - make it resemble a partial
