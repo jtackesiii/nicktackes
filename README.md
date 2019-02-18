@@ -8,3 +8,4 @@ ToDo:
    - to do this:
      - edit html template
        - make it resemble a partial
+       - Publications should have hanging indents
