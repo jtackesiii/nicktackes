@@ -240,6 +240,11 @@ section.failure a.active {
     background: none;
 }
 
+/* div-padding */
+.spacer {
+  padding-bottom: 10vh;
+}
+
 #contact .btn-outline {
     margin-top: 15px;
     border: solid 2px #2c3e50;
@@ -517,4 +522,60 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+/* CV Formatting */
+#cvBody h2 {
+  font-size: 2em;
+  line-height: 2.5em;
+}
+
+#cvBody ul {
+  font-size: 2rem;
+}
+
+#cvBody {
+  line-height: 2em;
+}
+
+.hanging-indent {
+list-style-type: none;
+padding-left: 2em;
+text-indent: -2em;
+text-align: justify;
+}
+
+#cvBody .btn-outline {
+    margin-top: 15px;
+    border: solid 2px #2c3e50;
+    font-size: 20px;
+    color: #2c3e50;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+#cvBody .btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    border: solid 2px rgba(229,93,78,0.36);
+    color: rgba(229,93,78,0.36);
+    background: none;
+}
+
+.latex sub, .latex sup {
+text-transform: uppercase;
+}
+.latex sub {
+vertical-align: -0.4ex;
+margin-left: -0.1667em;
+margin-right: -0.125em;
+}
+.latex, .latex sub {
+font-size: 1em;
+}
+.latex sup {
+font-size: 0.75em;
+vertical-align: -0.15em;
+margin-left: -0.36em;
+margin-right: -0.15em;
 }

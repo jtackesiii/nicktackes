@@ -9,3 +9,4 @@ ToDo:
      - edit html template
        - make it resemble a partial
        - Publications should have hanging indents
+       - The parent lists of nested lists should have list-style-type: none
