@@ -222,24 +222,6 @@ section.failure a.active {
   border-radius: 25px;
 }
 
-#CV .btn-outline {
-    margin-top: 15px;
-    border: solid 2px #2c3e50;
-    font-size: 20px;
-    color: #2c3e50;
-    background: 0 0;
-    transition: all .3s ease-in-out;
-}
-
-#CV .btn-outline:hover,
-.btn-outline:focus,
-.btn-outline:active,
-.btn-outline.active {
-    border: solid 2px rgba(229,93,78,0.36);
-    color: rgba(229,93,78,0.36);
-    background: none;
-}
-
 /* div-padding */
 .spacer {
   padding-bottom: 10vh;
@@ -537,7 +519,14 @@ footer .footer-below {
   line-height: 2em;
 }
 
-.hanging-indent {
+#conference-paperspresentations + ul {
+list-style-type: none;
+padding-left: 2em;
+text-indent: -2em;
+text-align: justify;
+}
+
+#publications + ul {
 list-style-type: none;
 padding-left: 2em;
 text-indent: -2em;
