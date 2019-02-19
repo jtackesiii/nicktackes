@@ -519,7 +519,7 @@ footer .footer-below {
   line-height: 2em;
 }
 
-#conference-paperspresentations + ul {
+#conferences + ul {
 list-style-type: none;
 padding-left: 2em;
 text-indent: -2em;
