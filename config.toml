@@ -91,7 +91,7 @@ theme = "hugo-freelancer-theme"
 
 
     [params.footer]
-        copyright = "(c) 2018 Nick Tackes"
+        copyright = "(c) 2019 Nick Tackes"
 
         [params.footer.location]
             title = ""
