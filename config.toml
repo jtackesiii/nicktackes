@@ -40,7 +40,7 @@ theme = "hugo-freelancer-theme"
         # Copy your own image into './static/img/'' if you wish
         image = "NTprofile1.jpg"
         name = "Nick Tackes"
-        subtitle = "PhD Student, Columbia University"
+        subtitle = "PhD Candidate, Columbia University"
 
 
     [params.portfolio]
@@ -59,7 +59,7 @@ theme = "hugo-freelancer-theme"
 
     [params.about]
         title = "About"
-        description = "I am an ethnographer of healing and religion in South Asia. My current research addresses self-help and -care as practiced by two Hindu groups in contemporary North India: the All World Gayatri Pariwar, an organization that pursues wellbeing through community-oriented social service, several religious rites that they claim have scientific backing, and the life and works of their founder Shriram Sharma, the presumed author of some 3200 books; and the patrons of the products and services of Baba Ramdev, whose Patanjali company deals in everything from yoga to instant noodles to swadeshi SIM cards. To this end, I work between Religion and Medical Anthropology.<br><br>I am currently a third-year PhD student in the Religion Department of Columbia University."
+        description = "I am an ethnographer of healing and religion in South Asia. My current research is an investigation of *care products*, a term I use to describe a subset of goods, services, and service projects offered by three Hindu institutions in Mathura, India. My aim is to determine for which reasons, by which means, and in which ways Indians incorporate these care products into their lives. To this end, I work between Religion and Medical Anthropology."
 
     [params.CV]
         title= "C.V."
