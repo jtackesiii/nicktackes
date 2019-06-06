@@ -59,7 +59,7 @@ theme = "hugo-freelancer-theme"
 
     [params.about]
         title = "About"
-        description = "I am an ethnographer of healing and religion in South Asia. My current research is an investigation of *care products*, a term I use to describe a subset of goods, services, and service projects offered by three Hindu institutions in Mathura, India. My aim is to determine for which reasons, by which means, and in which ways Indians incorporate these care products into their lives. To this end, I work between Religion and Medical Anthropology."
+        description = "I am an ethnographer of healing and religion in South Asia. My dissertation project is an investigation of *care products*, a term I use to describe a subset of goods, services, and service projects offered by three Hindu institutions in Mathura, India. My research will determine for which reasons, by which means, and in which ways Indians incorporate these care products into their lives. To this end, I work between Religion and Medical Anthropology."
 
     [params.CV]
         title= "C.V."
