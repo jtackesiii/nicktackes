@@ -17,9 +17,9 @@
                         <img src="img/portfolio/{{ .img }}" class="img-modal img-responsive img-centered" alt="">
                         <p style="text-align:center; color:#aaa;">{{ .caption | markdownify }}</p>
                         <br><br>
-                        <p style="text-align: justify">{{ .description | markdownify }}</p>
+                        <div class="paragraph">{{ .description | markdownify }}</div>
                         <div class="spacer"></div>
-                        <div class="citations">{{ .citations | markdownify }}</div>
+                        <div class="paragraph citations">{{ .citations | markdownify }}</div>
                         <!-- look for conditional formatting -->
                         <div class="{{ .link }}">
                           <input type="button" class="btn btn-lg btn-outline" value="{{ .link }}" onclick="window.open('{{ .linkName }}')">

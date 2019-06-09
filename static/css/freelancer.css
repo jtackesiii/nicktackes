@@ -246,7 +246,7 @@ section.failure a.active {
 }
 
 #about .about-description {
-    word-spacing: 7px;
+    word-spacing: 0.25em;
 }
 
 #portfolio .portfolio-item {
@@ -506,8 +506,12 @@ footer .footer-below {
     opacity: 0;
 }
 
+.portfolio-modal .paragraph p {
+    text-align: justify;
+    word-spacing: 0.25em;
+}
+
 .portfolio-modal .citations p {
-    text-align: left;
     font-size: 1em;
     padding-left: 2em;
     text-indent: -2em;
