@@ -104,13 +104,12 @@ theme = "hugo-freelancer-theme"
             # for more icons. The icons are represented by their corresponding
             # CSS class.
             [[params.footer.social.networks]]
-                icon = "fa-facebook"
-                link = "//facebook.com/nicktackes"
+                icon = "ai ai-academia"
+                link=  "//columbia.academia.edu/NickTackes/"
 
             [[params.footer.social.networks]]
                 icon = "fa-linkedin"
                 link=  "//linkedin.com/in/jtackes/"
-
 
         [params.footer.credits]
             title = ""

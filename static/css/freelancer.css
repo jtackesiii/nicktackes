@@ -505,6 +505,14 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+
+.portfolio-modal .citations p {
+    text-align: left;
+    font-size: 1em;
+    padding-left: 2em;
+    text-indent: -2em;
+}
+
 /* CV Formatting */
 #cvBody h2 {
   font-size: 2em;
