@@ -513,6 +513,10 @@ footer .footer-below {
     text-indent: -2em;
 }
 
+.img-modal {
+  height: 75vh;
+}
+
 /* CV Formatting */
 #cvBody h2 {
   font-size: 2em;
