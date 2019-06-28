@@ -109,7 +109,7 @@ theme = "hugo-freelancer-theme"
 
             [[params.footer.social.networks]]
                 icon = "fa-linkedin"
-                link=  "//linkedin.com/in/jtackes/"
+                link=  "//linkedin.com/in/NickTackes/"
 
         [params.footer.credits]
             title = ""
