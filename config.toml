@@ -38,7 +38,7 @@ theme = "hugo-freelancer-theme"
 
     [params.header]
         # Copy your own image into './static/img/'' if you wish
-        image = "NTprofile1.jpg"
+        image = "NTprofile2.jpg"
         name = "Nick Tackes"
         subtitle = "PhD Candidate, Columbia University"
 
