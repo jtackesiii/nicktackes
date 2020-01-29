@@ -584,3 +584,18 @@ vertical-align: -0.15em;
 margin-left: -0.36em;
 margin-right: -0.15em;
 }
+
+/* Scrollbar Options */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2c3e50;
+}
+
+::-webkit-scrollbar-track {
+  background: #eee;
+}

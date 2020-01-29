@@ -36,7 +36,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    {{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}
+                    &copy; {{ now.Format "2006" }} Nick Tackes
                 </div>
             </div>
         </div>
