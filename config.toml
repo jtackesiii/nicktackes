@@ -13,7 +13,7 @@ theme = "hugo-freelancer-theme"
     # To provide some metadata for search engines feel free to add a few
     # information about you and your website.
     name = "Nick Tackes"
-    description = "PhD Student, Columbia University"
+    description = "Religion Department, Columbia University"
 
     # Since this template is static, the contact form uses www.formspree.io as a
     # proxy. The form makes a POST request to their servers to send the actual
@@ -106,6 +106,10 @@ theme = "hugo-freelancer-theme"
             [[params.footer.social.networks]]
                 icon = "ai ai-academia"
                 link=  "//columbia.academia.edu/NickTackes/"
+
+            [[params.footer.social.networks]]
+                icon = "fa-github fa-lg"
+                link=  "//github.com/jtackesiii"
 
             [[params.footer.social.networks]]
                 icon = "fa-linkedin"
