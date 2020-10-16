@@ -522,6 +522,32 @@ footer .footer-below {
 }
 
 /* CV Formatting */
+
+#cvBody table {
+  width: 100%;
+  font-size: 1.25em;
+}
+
+#cvBody td {
+  padding: 20px;
+}
+
+#cvBody tr {
+  border-bottom: 1px solid black;
+}
+
+#cvBody tr:last-child, #langTable tr {
+  border-bottom: none;
+}
+
+#langTable td:first-child {
+  border-right: 1px solid black;
+}
+
+#langTable td:last-child {
+  border-left: 1px solid black;
+}
+
 #cvBody h2 {
   font-size: 2em;
   line-height: 2.5em;
