@@ -540,14 +540,6 @@ footer .footer-below {
   border-bottom: none;
 }
 
-#langTable td:first-child {
-  border-right: 1px solid black;
-}
-
-#langTable td:last-child {
-  border-left: 1px solid black;
-}
-
 #cvBody h2 {
   font-size: 2em;
   line-height: 2.5em;
