@@ -40,7 +40,8 @@ theme = "hugo-freelancer-theme"
         # Copy your own image into './static/img/'' if you wish
         image = "NTprofile2.jpg"
         name = "Nick Tackes"
-        subtitle = "Religion Department, Columbia University"
+        department = "Religion Department"
+        university = "Columbia University"
 
 
     [params.portfolio]
@@ -72,22 +73,6 @@ theme = "hugo-freelancer-theme"
 
     [params.contact]
         title = "Contact"
-
-        # 'error' defines error messages for invalid inputs
-        [params.contact.form.name]
-            text = "Name"
-            error = "Please enter your name."
-
-        [params.contact.form.email]
-            text = "Email Address"
-            error = "Please enter your email address."
-
-        [params.contact.form.message]
-            text = "Message"
-            error = "Please enter a message."
-
-        [params.contact.form.button]
-            text = "Send"
 
 
     [params.footer]
