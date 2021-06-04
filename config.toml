@@ -12,20 +12,9 @@ theme = "hugo-freelancer-theme"
 
     # To provide some metadata for search engines feel free to add a few
     # information about you and your website.
+
     name = "Nick Tackes"
     description = "Religion Department, Columbia University"
-
-    # Since this template is static, the contact form uses www.formspree.io as a
-    # proxy. The form makes a POST request to their servers to send the actual
-    # email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your email address under 'email' below
-    # - upload the generated site to your server
-    # - send a dummy email youself to confirm your account
-    # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
     email = "jnt2127@columbia.edu"
 
     # Custom assets
@@ -73,6 +62,7 @@ theme = "hugo-freelancer-theme"
 
     [params.contact]
         title = "Contact"
+        link = "mailto:jnt2127@columbia.edu"
 
 
     [params.footer]
