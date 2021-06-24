@@ -49,6 +49,11 @@ theme = "hugo-freelancer-theme"
 
     [params.about]
         title = "About"
+        description = "I am an ethnographer of healing and religion in South Asia. My dissertation project is an investigation of the Gayatri Pariwar and the Brahma Kumaris, two Hindu-adjacent religious institutions that anticipate the imminent end of the world as we know it. Rather than retreat from society, however, these groups continue to engage their surrounding communities in attempts to provide innovative solutions to contemporary societal problems. My research will attend to the branded goods, services, service projects, and ritual engagements that constitute their preparations for the end of this era and the golden age they believe will succeed it."
+
+
+    [params.about-old]
+        title = "About"
         description = "I am an ethnographer of healing and religion in South Asia. My dissertation project is an investigation of *care products*, a term I use to describe a subset of goods, services, and service projects offered by two Hindu institutions in Mathura, India. My research will determine for which reasons, by which means, and in which ways Indians incorporate these care products into their lives. To this end, I work between Religion and Medical Anthropology."
 
     [params.CV]
