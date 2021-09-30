@@ -537,12 +537,16 @@ footer .footer-below {
 }
 
 #cvBody tr {
+    border: none;
+  }
+
+/* #cvBody tr {
   border-bottom: 1px solid black;
 }
 
 #cvBody tr:last-child, #langTable tr {
   border-bottom: none;
-}
+} */
 
 #cvBody h2 {
   font-size: 2em;
