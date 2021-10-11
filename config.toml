@@ -37,7 +37,7 @@ theme = "hugo-freelancer-theme"
         # All projects defined in their own files. You can find example projects
         # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
         # at the root of this Hugo site.
-        # For more informtion take a look at the README.
+        # For more information take a look at the README.
         title = "Research"
 
         [params.portfolio.modal]
@@ -49,7 +49,7 @@ theme = "hugo-freelancer-theme"
 
     [params.about]
         title = "About"
-        description = "I am an ethnographer of healing and religion in South Asia. My dissertation project is an investigation of the Gayatri Pariwar and the Brahma Kumaris, two Hindu-adjacent religious institutions that anticipate the imminent end of the world. Rather than retreat from society, however, these groups continue to engage their surrounding communities in attempts to provide innovative solutions to contemporary societal problems. My research attends to the branded goods, services, service projects, and ritual engagements that constitute their preparations for the end of this era and the golden age they believe will succeed it."
+        description = "I am an ethnographer of healing and religion in South Asia. My dissertation project is an investigation of the Gayatri Pariwar and the Brahma Kumaris, two Hindu-adjacent religious institutions whose members anticipate the imminent end of the world. Rather than retreat from society, however, these groups continue to engage their surrounding communities in attempts to provide innovative solutions to contemporary societal problems. My research attends to the branded goods, services, service projects, and ritual engagements that constitute their preparations for the end of this era and the golden age they believe will succeed it."
 
 
     [params.about-old]
