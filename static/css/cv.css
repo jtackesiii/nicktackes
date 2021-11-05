@@ -1,7 +1,7 @@
 #cv {
     width: 50vw;
     float: right;
-    padding-right: 10vw;
+    padding-right: 5vw;
     padding-top: 5vh;
     padding-bottom: 5vh;
     display: none;
@@ -55,7 +55,22 @@ p, h1, h2 {
     text-align: justify;
 }
 
+#print-button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: gray;
+}
+
+#print-button:hover {
+    color: turquoise;
+}
+
 @media print {
+
+    #print-button {
+        display: none;
+    }
 
     #cv {
         width: 100%;
