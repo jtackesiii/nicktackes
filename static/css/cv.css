@@ -56,10 +56,12 @@ p, h1, h2 {
 }
 
 #print-button {
+    padding-bottom: 2vh;
+    padding-right: 1vh;
     position: fixed;
     bottom: 0;
     right: 0;
-    color: gray;
+    color: black;
 }
 
 #print-button:hover {

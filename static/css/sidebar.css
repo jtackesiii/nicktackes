@@ -45,17 +45,17 @@
     color: turquoise;
 }
 
-#sidebar p {
-    width: 35vw;
-    margin: auto;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-}
-
 #social-buttons {
     width: 35vw;
     margin: auto;
     text-align: center;
     padding-top: 8vh;
+}
+
+#sidebar p {
+    width: 35vw;
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    bottom: 1vh;
 }

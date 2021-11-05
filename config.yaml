@@ -6,7 +6,7 @@ Params:
   sidebar:
     img: "/img/NTprofile3.png"
     menu: ["about", "research", "teaching", "cv"]
-    landing: "cv"
+    landing: "about"
 
   about:
     I am an ethnographer of healing and religion in South Asia.
