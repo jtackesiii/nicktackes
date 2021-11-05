@@ -1,0 +1,17 @@
+<div id="publications">
+    <h3>Publications</h3>
+    <ul>
+    {{ range sort (where .Site.Data.cv.Publications "Type" "Book") "Date" "desc"}}
+    <li>{{.Title | markdownify }} <a href="{{.URL}}" target="_blank">{{.URL}}</a></li>
+    {{ end }}
+    {{ range sort (where .Site.Data.cv.Publications "Type" "Book Chapter") "Date" "desc" }}
+    <li>{{.Title | markdownify }} <a href="{{.URL}}" target="_blank">{{.URL}}</a></li>
+    {{ end }}
+    {{ range sort (where .Site.Data.cv.Publications "Type" "Article") "Date" "desc" }}
+    <li>{{.Title | markdownify }} <a href="{{.URL}}" target="_blank">{{.URL}}</a></li>
+    {{ end }}
+    {{ range sort (where .Site.Data.cv.Publications "Type" "Review") "Date" "desc" }}
+    <li>{{.Title | markdownify }} <a href="{{.URL}}" target="_blank">{{.URL}}</a></li>
+    {{ end }}
+    </ul>
+</div>

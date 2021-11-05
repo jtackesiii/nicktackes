@@ -1,0 +1,16 @@
+#about {
+    width: 50vw;
+    float: right;
+    padding-right: 10vw;
+    padding-top: 10%;
+    display: none;
+}
+
+#about:target {
+    display: block;
+}
+
+#about p {
+    text-align: justify;
+    font-size: 1.5em;
+}

@@ -1,0 +1,8 @@
+<div id="memberships">
+    <h3>Professional Memberships</h3>
+    <ul>
+        {{ range .Site.Data.cv.Memberships }}
+        <li>{{ . }}</li>
+        {{ end }}
+    </ul>
+</div>

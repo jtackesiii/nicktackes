@@ -1,0 +1,19 @@
+<div id="research">
+    <ul id="accordion">
+    {{ range sort .Site.Data.research "Date" "desc"}}
+        <li>
+            <label for="{{ .Title | anchorize }}">{{ .Title }}</label>
+            <input type="radio" name="accordion" id="{{ .Title | anchorize }}" unchecked>
+            <div class="content">
+                <p>
+                    {{ .Description | markdownify }}
+                    {{ if isset . "Link" }}<a href="{{ .Link }}" target="_blank">More...</a>{{ end }}
+                </p>
+                <row>
+                    {{ range .tag }}<span class="tag">#{{ . }}</span>{{ end }}
+                </row>
+            </div>
+        </li>
+    {{ end }}
+    </ul>
+</div>

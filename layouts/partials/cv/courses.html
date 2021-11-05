@@ -1,0 +1,33 @@
+<div id="courses">
+    <h3>Teaching</h3>
+    <h4>Instructor of Record</h4>
+    <table>
+        <colgroup>
+           <col>
+           <col>
+           <col>
+        </colgroup>
+    {{ range sort (where .Site.Data.cv.Courses "Role" "!=" "Teaching Assistant") "Date" "desc" }}
+        <tr>
+            <td >{{ .Date }} {{ .Term }}</td>
+            <td>{{ .Course }}</td>
+            <td>{{ .Venue }}</td>
+        </tr>
+    {{ end }}
+       </table>
+       <h4>Teaching Assistant</h4>
+       <table>
+           <colgroup>
+              <col>
+              <col>
+              <col>
+           </colgroup>
+       {{ range sort (where .Site.Data.cv.Courses "Role" "Teaching Assistant") "Date" "desc" }}
+           <tr>
+               <td >{{ .Date }} {{ .Term }}</td>
+               <td>{{ .Course }}</td>
+               <td>{{ .Venue }}</td>
+           </tr>
+       {{ end }}
+          </table>
+</div>

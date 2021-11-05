@@ -1,0 +1,64 @@
+#cv {
+    width: 50vw;
+}
+
+#cv h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+#cv table {
+    width: 100%;
+}
+
+#cv tr td:last-of-type {
+    text-align: right;
+}
+
+#cv tr {
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+
+#cv td {
+    white-space:pre-wrap;
+    word-wrap:break-word;
+}
+
+#cv li {
+    list-style-type: none;
+    padding-left: 0;
+    text-indent: -2em;
+}
+
+#teaching h4 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+#publications, #conferences {
+    text-align: justify;
+}
+
+@media print {
+
+    #cv {
+        width: 100%;
+    }
+
+    h1, h2, h3, h4, td, li {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h1 {
+        font-size: large;
+    }
+
+    h3 {
+        font-variant: small-caps;
+    }
+
+    @page {
+        margin: 1in;
+    }
+}

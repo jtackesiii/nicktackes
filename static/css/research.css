@@ -1,0 +1,80 @@
+#research {
+    width: 50vw;
+    float: right;
+    padding-right: 10vw;
+    padding-top: 10%;
+    display: none;
+}
+
+#research:target {
+    display: block;
+}
+
+#accordion {
+    margin: auto;
+    padding: 0;
+    width: 50vw;
+    }
+
+#accordion li {
+    list-style: none;
+    width:100%;
+    }
+
+#accordion  li label {
+    padding:10px;
+    display:block;
+    font-size:2em;
+    line-height:2em;
+    border-bottom: solid 1px;
+    }
+
+#accordion label:hover {
+    color: turquoise;
+    cursor: pointer;
+    border-bottom: solid 1px black;
+}
+
+#accordion .content {
+    display:none;
+    padding:10px;
+    font-size:1.2em;
+    line-height:26px;
+    text-align: justify;
+}
+
+#accordion .content p {
+    padding-bottom: 1em;
+}
+
+#accordion .content row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1em;
+}
+
+#accordion .content a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#accordion .content a:hover {
+    color: turquoise;
+}
+
+#accordion .tag {
+    padding: 5px;
+    margin-right: 1em;
+    font-size: smaller;
+    font-family: 'Courier New', Courier, monospace;
+    color: #aaa;
+}
+
+#accordion label + input[type='radio']:checked + .content {
+    display:block;
+}
+
+#accordion label + input[type='radio'] {
+    display: none;
+ }

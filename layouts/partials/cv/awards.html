@@ -1,0 +1,15 @@
+<div id="awards">
+    <h3>Competitive Scholarships and Honors</h3>
+    <table>
+        <colgroup>
+           <col>
+           <col>
+        </colgroup>
+    {{ range sort .Site.Data.cv.Awards "Date" "desc" }}
+        <tr>
+            <td>{{ .Date }}</td>
+            <td style="text-align:left;">{{ .Title }}</td>
+        </tr>
+    {{ end }}
+       </table>
+</div>

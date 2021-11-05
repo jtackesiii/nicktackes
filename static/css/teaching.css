@@ -1,0 +1,24 @@
+#teaching {
+    width: 50vw;
+    float: right;
+    padding-right: 10vw;
+    padding-top: 10%;
+    display: none;
+}
+
+#teaching:target {
+    display: block;
+}
+
+#teaching p {
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+#teaching a {
+    color: black;
+}
+
+#teaching a:hover {
+    color: turquoise;
+}

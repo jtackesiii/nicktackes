@@ -1,0 +1,61 @@
+#sidebar {
+    position: fixed;
+    width: 35vw;
+    height: 100vh;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#sidebar-container {
+    display: inline-block;
+    width: 35vw;
+    padding: 10%;
+    padding-bottom: 0;
+    box-sizing: border-box;
+}
+
+#sidebar-img {
+    display: inline-block;
+    width: 18vw;
+    padding-left: 5vw;
+}
+
+#sidebar h2 {
+    text-align: center;
+    line-height: 15vh;
+}
+
+#nav {
+    display: inline-block;
+    width: 100%;
+}
+
+#nav ul {
+    text-align: center;
+    list-style-type: none;
+    text-indent: -2em;
+}
+
+#sidebar a {
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+}
+
+#sidebar a:hover {
+    color: turquoise;
+}
+
+#sidebar p {
+    width: 35vw;
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+#social-buttons {
+    width: 35vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 8vh;
+}

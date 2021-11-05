@@ -1,0 +1,8 @@
+<div id="conferences">
+    <h3>Conferences and Invited Talks</h3>
+    <ul>
+    {{ range sort .Site.Data.cv.Conferences "Date" "desc"}}
+    <li>“{{.Title | markdownify }},” {{if ne .Role "Panelist" }}{{ .Role }}, {{ end }}{{ .Venue }}.</li>
+    {{ end }}
+    </ul>
+</div>
