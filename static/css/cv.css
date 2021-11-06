@@ -1,8 +1,9 @@
 #cv {
-    width: 50vw;
+    width: 65vw;
     float: right;
     padding-right: 5vw;
-    padding-top: 5vh;
+    padding-left: 7vw;
+    padding-top: 5%;
     padding-bottom: 5vh;
     display: none;
 }
@@ -104,4 +105,23 @@ p, h1, h2 {
         display: none;
     }
 
+}
+
+@media only screen and (max-width: 700px) {
+    #cv {
+        display: block;
+        width: 100%;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    #header {
+        display: none;
+    }
+
+    #print-button {
+        display: none;
+    }
 }

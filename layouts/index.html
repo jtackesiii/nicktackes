@@ -10,6 +10,7 @@
     {{ partial "research.html" . }}
     {{ partial "teaching.html" . }}
     <div id="cv">
+        <h2 class="media-title">c.v.</h2>
         {{ partial "cv/header.html" . }}
         {{ partial "cv/contact.html" . }}
         {{ partial "cv/education.html" . }}
@@ -23,11 +24,14 @@
         {{ partial "cv/service.html" . }}
         {{ partial "cv/print.html" . }}
     </div>
+    {{ partial "footer.html" . }}
 </body>
 <script>
     // default anchor
     function openAnchor() {
-        window.location.hash='#{{ .Site.Params.sidebar.landing }}'
+        if (screen.width > 700) {
+            window.location.hash='#{{ .Site.Params.sidebar.landing }}'
+        }
     };
     window.onload = openAnchor();
 </script>

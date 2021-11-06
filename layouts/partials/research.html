@@ -1,9 +1,10 @@
 <div id="research">
+    <h2 class="media-title">research</h2>
     <ul id="accordion">
     {{ range sort .Site.Data.research "Date" "desc"}}
         <li>
             <label for="{{ .Title | anchorize }}">{{ .Title }}</label>
-            <input type="radio" name="accordion" id="{{ .Title | anchorize }}" unchecked>
+            <input type="radio" name="accordion" id="{{ .Title | anchorize }}">
             <div class="content">
                 <p>
                     {{ .Description | markdownify }}

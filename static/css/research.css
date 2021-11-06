@@ -1,8 +1,10 @@
 #research {
-    width: 50vw;
+    width: 65vw;
     float: right;
-    padding-right: 10vw;
+    padding-right: 5vw;
+    padding-left: 7vw;
     padding-top: 10%;
+    padding-bottom: 5vh;
     display: none;
 }
 
@@ -77,4 +79,18 @@
 
 #accordion label + input[type='radio'] {
     display: none;
+ }
+
+ @media only screen and (max-width: 700px) {
+    #research {
+        display: block;
+        width: 100%;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 10vh;
+    }
+
+    #accordion {
+        width: 75vw;
+    }
  }

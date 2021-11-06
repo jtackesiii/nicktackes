@@ -10,12 +10,4 @@
         {{ end }}
         </ul>
     </nav>
-    <div id="social-buttons">
-        {{ range .Site.Params.social }}
-        <a href="{{ .URL }}"><i class="fa fa-fw {{ .icon }}"></i></a>
-        {{ end }}
-    </div>
-    <div id="footer">
-        <p>© {{ now.Format "2006" }} {{ .Site.Data.cv.Name }}</p>
-    </div>
 </div>

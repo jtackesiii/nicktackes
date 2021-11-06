@@ -1,7 +1,8 @@
 #teaching {
-    width: 50vw;
+    width: 65vw;
     float: right;
-    padding-right: 10vw;
+    padding-right: 5vw;
+    padding-left: 7vw;
     padding-top: 10%;
     display: none;
 }
@@ -21,4 +22,20 @@
 
 #teaching a:hover {
     color: turquoise;
+}
+
+@media only screen and (max-width: 700px) {
+    #teaching {
+        display: block;
+        width: 100%;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 10vh;
+    }
+    #teaching p {
+        padding-top: 1em;
+        line-height: 1.5em;
+        font-size: 1.25em;
+        text-align: left;
+    }
 }
