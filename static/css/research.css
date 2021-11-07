@@ -38,7 +38,6 @@
 }
 
 #accordion .content {
-    display:none;
     padding:10px;
     font-size:1.2em;
     line-height:26px;
@@ -73,8 +72,8 @@
     color: #aaa;
 }
 
-#accordion label + input[type='radio']:checked + .content {
-    display:block;
+.invisible {
+    display: none;
 }
 
 #accordion label + input[type='radio'] {
@@ -92,5 +91,9 @@
 
     #accordion {
         width: 75vw;
+    }
+
+    #accordion .content {
+        text-align: left;
     }
  }
