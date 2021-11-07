@@ -75,6 +75,14 @@ p, h1, h2 {
         display: none;
     }
 
+    #sidebar {
+        display: none !important;
+    }
+
+    #footer {
+        display: none !important;
+    }
+
     #cv {
         width: 100%;
         padding: 0;
@@ -100,11 +108,6 @@ p, h1, h2 {
     @page {
         margin: 1in;
     }
-
-    #sidebar {
-        display: none;
-    }
-
 }
 
 @media only screen and (max-width: 700px) {
