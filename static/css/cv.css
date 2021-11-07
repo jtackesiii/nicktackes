@@ -17,6 +17,10 @@
     margin-bottom: 0.5em;
 }
 
+#cv h3 {
+    font-variant: small-caps;
+}
+
 p, h1, h2 {
     margin: 0;
 }
@@ -99,10 +103,6 @@ p, h1, h2 {
 
     h1 {
         font-size: large;
-    }
-
-    h3 {
-        font-variant: small-caps;
     }
 
     @page {
