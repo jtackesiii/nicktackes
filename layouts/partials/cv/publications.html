@@ -1,4 +1,4 @@
-<div id="publications">
+<div class="chunk" id="publications">
     <h3>Publications</h3>
     <ul>
     {{ range sort (where .Site.Data.cv.Publications "Type" "Book") "Date" "desc"}}

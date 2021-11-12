@@ -96,11 +96,7 @@ p, h1, h2 {
         margin-top: -0.8em;
     }
 
-    h1, h2, h3, h4 {
-        page-break-after: avoid;
-    }
-
-    ul, table {
+    .chunk {
         page-break-inside: avoid;
     }
 
