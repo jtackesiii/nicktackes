@@ -22,12 +22,21 @@ Params:
     believe will succeed it.
 
   social:
+    - URL: mailto:jtackesiii@gmail.edu
+      icon: fas fa-envelope
     - URL: https://columbia.academia.edu/NickTackes/
       icon: ai ai-academia
     - URL: https://github.com/jtackesiii
-      icon: fa-github fa-lg
+      icon: fab fa-github
     - URL: https://linkedin.com/in/NickTackes
-      icon: fa-linkedin
+      icon: fab fa-linkedin
+
+  credits:
+    This site is built on [Hugo](https://gohugo.io),
+     hosted on [Github](https://github.com), and
+    served on [Netlify](https://netlify.com). Icons
+    are by [Fontawesome](https://fontawesome.com) and
+    [Academicons](https://jpswalsh.github.io/academicons).
 
   teaching:
     description:

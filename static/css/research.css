@@ -60,10 +60,6 @@
     color: black;
 }
 
-#accordion .content a:hover {
-    color: turquoise;
-}
-
 #accordion .tag {
     padding: 5px;
     margin-right: 1em;

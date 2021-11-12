@@ -1,7 +1,17 @@
 <div id="footer">
+    <div id=credit-box>
+    <button id="credits" onclick="
+        var credits = document.getElementById('credit-text');
+        var creditBox = document.getElementById('credit-box');
+                credits.classList.toggle('invisible');
+                creditBox.classList.toggle('box-shadow');
+                return;
+    "><i class="fas fa-ellipsis-h fa-lg"></i></button>
+    <p id="credit-text" class="invisible">{{ .Site.Params.credits | markdownify }}</p>
+    </div>
     <div id="social-buttons">
         {{ range .Site.Params.social }}
-        <a href="{{ .URL }}"><i class="fa fa-fw {{ .icon }}"></i></a>
+        <a href="{{ .URL }}"><i class="{{ .icon }}"></i></a>
         {{ end }}
     </div>
     <p>© {{ now.Format "2006" }} {{ .Site.Data.cv.Name }}</p>

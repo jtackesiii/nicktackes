@@ -41,14 +41,13 @@
     text-indent: -2em;
 }
 
-#sidebar a {
-    font-size: 1.5em;
-    color: black;
+a {
     text-decoration: none;
+    color: black;
 }
 
-#sidebar a:hover {
-    color: turquoise;
+#sidebar a, #social-buttons a {
+    font-size: 1.5em;
 }
 
 #social-buttons {
@@ -58,13 +57,7 @@
     padding-bottom: 1em;
 }
 
-#social-buttons a {
-    font-size: 1.5em;
-    color: black;
-    text-decoration: none;
-}
-
-#social-buttons a:hover {
+a:hover, #credits:hover {
     color: turquoise;
 }
 
@@ -77,6 +70,35 @@
     bottom: 1vh;
     text-align: center;
     width: 35vw;
+}
+
+#credits {
+    margin-right: auto;
+    padding-top: 1em;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    text-align: left;
+}
+
+#credit-box {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    position: absolute;
+    left: 1vw;
+    bottom: 1vh;
+}
+
+#credit-text {
+    text-align: left;
+    font-size: 1.25em;
+    padding: 0 1em 1em 1em;
+}
+
+.box-shadow {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -113,6 +135,12 @@
 
     #footer {
         position: static;
-        width: 100vw;
+        width: 100%;
+    }
+
+    #credit-box {
+        position: static;
+        width: 100%;
+        bottom: 1vh;
     }
 }
