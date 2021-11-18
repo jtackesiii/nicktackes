@@ -57,44 +57,12 @@ a {
     padding-bottom: 1em;
 }
 
-a:hover, #credits:hover {
+a:hover {
     color: turquoise;
 }
 
 .media-title {
     display: none;
-}
-
-#footer {
-    position: fixed;
-    bottom: 1vh;
-    text-align: center;
-    width: 35vw;
-}
-
-#credits {
-    margin-right: auto;
-    padding-top: 1em;
-    background-color: transparent;
-    border: none;
-    position: relative;
-    text-align: left;
-}
-
-#credit-box {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    max-width: 90%;
-    position: absolute;
-    left: 1vw;
-    bottom: 1vh;
-}
-
-#credit-text {
-    text-align: left;
-    font-size: 1.25em;
-    padding: 0 1em 1em 1em;
 }
 
 .box-shadow {
@@ -133,14 +101,4 @@ a:hover, #credits:hover {
         position: absolute;
     }
 
-    #footer {
-        position: static;
-        width: 100%;
-    }
-
-    #credit-box {
-        position: static;
-        width: 100%;
-        bottom: 1vh;
-    }
 }
