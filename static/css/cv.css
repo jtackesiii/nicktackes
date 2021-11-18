@@ -54,6 +54,11 @@ p, h1, h2 {
     list-style-type: none;
     padding-left: 2em ;
     text-indent: -2em ;
+    padding-bottom: 5px;
+}
+
+#languages li {
+    padding-bottom: 0px;
 }
 
 #publications, #conferences {
