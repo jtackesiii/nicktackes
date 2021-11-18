@@ -61,10 +61,6 @@ p, h1, h2 {
     padding-bottom: 0px;
 }
 
-#publications, #conferences {
-    text-align: justify;
-}
-
 #print-button {
     padding-bottom: 2vh;
     padding-right: 1vh;
