@@ -1,5 +1,17 @@
 <div id="research">
     <h2 class="media-title">research</h2>
+    <!-- <div id="tags-box">
+    {{ $scratch := newScratch }}
+    {{ $scratch.Set "array" (slice) }}
+    {{ range .Site.Data.research }}
+    {{ range .tags }}
+    {{ $scratch.Add "array" . }}
+    {{ end }}{{ end }}
+    {{ $list := $scratch.Get "array" | uniq }}
+    {{ range $list }}
+    <a class="tag">#{{ . }}</a>
+    {{ end }}
+    </div> -->
     <ul id="accordion">
     {{ range sort .Site.Data.research "Date" "desc"}}
         <li>
@@ -16,10 +28,25 @@
                     {{ if isset . "Link" }}<a href="{{ .Link }}" target="_blank">More...</a>{{ end }}
                 </p>
                 <row>
-                    {{ range .tag }}<span class="tag">#{{ . }}</span>{{ end }}
+                    {{ range .tags }}<span class="tag">#{{ . }}</span>{{ end }}
                 </row>
             </div>
         </li>
     {{ end }}
     </ul>
+    <div id="news">
+        <h2>News:</h2>
+            {{ $list := slice }}
+            {{ with .Site.Data.cv }}
+            {{ $list := append $list .Awards }}
+            {{ $list := append $list .Publications }}
+            {{ $list := append $list .Conferences }}
+            {{ $list := sort $list "Date" "desc" }}
+            {{ range first 3 $list }}
+                {{ if eq .Role "Panelist" }}<p>Presented “{{.Title | markdownify }}” at the {{.Venue}} on {{ time.Format "January 2, 2006" .Date }}.</p>{{ end }}
+                {{ if .Type }}<p>Published <a href="{{.URL}}" target="_blank">{{.Title | markdownify}}</a></p>{{ end }}
+                {{ if and (not .Role) (not .Type) }}<p>Received the {{ time.Format "2006" .Date }} {{.Title}}.</p>{{ end }}
+            {{ end }}
+            {{ end }}
+        </div>
 </div>

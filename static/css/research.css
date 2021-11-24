@@ -59,7 +59,7 @@
     font-weight: bold;
 }
 
-#accordion .tag {
+.tag {
     padding: 5px;
     margin-right: 1em;
     font-size: smaller;
@@ -74,6 +74,21 @@
 #accordion label + input[type='radio'] {
     display: none;
  }
+
+#news {
+    font-size: 1.25em;
+    margin: 1em;
+    padding: 1em;
+    border: solid 1px #ddd;
+}
+
+#news p {
+    padding-bottom: 1em;
+}
+
+#news h2 {
+    font-size: 1em;
+}
 
  @media only screen and (max-width: 700px) {
     #research {

@@ -29,18 +29,18 @@ Education:
     Pending: true
 
   - Degree: MPhil
-    Date: 2019
+    Date: 2019-05-22
     Venue: Columbia University
     Focus: Religion
 
   - Degree: MA
-    Date: 2016
+    Date: 2016-05-16
     Venue: Columbia University
     Focus: Religion
     GPA: 3.86
 
   - Degree: BA
-    Date: 2013
+    Date: 2013-05-26
     Venue: Carthage College
     Focus: Religion, Great Ideas
     GPA: 3.93
@@ -50,12 +50,12 @@ Certificates:
   - Accreditation: Foundational Track Completion
     Entity: Center for Teaching and Learning
     Venue: Columbia University
-    Date: 2021
+    Date: 2021-05-03
 
   - Accreditation: Advanced Certificate
     Entity: South Asia Institute
     Venue: Columbia University
-    Date: 2020
+    Date: 2020-02-12
 
 Languages:
   - English (native)
@@ -64,31 +64,31 @@ Languages:
 Awards:
 
   - Title: Columbia University IRCPL Dissertation Fellowship
-    Date: 2021
+    Date: 2021-06-29
 
   - Title: Fulbright-Hays Doctoral Dissertation Research Award
-    Date: 2018
+    Date: 2018-10-04
 
   - Title: AIIS Junior Research Fellowship (declined)
-    Date: 2018
+    Date: 2018-10-09
 
   - Title: AIIS Language Fellowship (Hindi)
-    Date: 2017
+    Date: 2017-02-21
 
   - Title: Summer FLAS Fellowship (Hindi)
-    Date: 2017
+    Date: 2017-03-29
 
   - Title: Summer FLAS Fellowship (Hindi)
-    Date: 2016
+    Date: 2016-06-10
 
   - Title: Academic Year FLAS Fellowship (Hindi)
-    Date: 2015
+    Date: 2015-04-10
 
   - Title: Academic Year FLAS Fellowship (Hindi)
-    Date: 2014
+    Date: 2014-04-18
 
   - Title: Fulbright-Nehru Fellowship (Teaching)
-    Date: 2013
+    Date: 2013-03-20
 
 Publications:
 
@@ -106,12 +106,16 @@ Conferences:
 
   - Title: "COVID-19 First Responders: The Gayatri Pariwar and the Immune Ritual Body"
     Date: 2021-11-20
-    Venue: Hinduism Unit and Religion in South Asia Unit, American Academy of Religion, Online
+    Unit: Hinduism Unit and Religion in South Asia Unit
+    Venue: American Academy of Religion Annual Meeting
+    Online: true
     Role: Panelist
 
   - Title: "Om Shanti Emojis: Three Facets of Digital Hinduism"
     Date: 2020-12-05
-    Venue: Anthropology of Religion Unit and Religion, Media, and Culture Unit, American Academy of Religion, Online
+    Unit: Anthropology of Religion Unit and Religion, Media, and Culture Unit
+    Venue: American Academy of Religion Annual Meeting
+    Online: true
     Role: Panelist
 
   - Title: "Energy and Vibrations: The Logic of Transformation in the Gayatri Pariwar and the Brahma Kumaris"

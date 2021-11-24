@@ -2,7 +2,7 @@
     <h3>Conferences and Invited Talks</h3>
     <ul>
     {{ range sort .Site.Data.cv.Conferences "Date" "desc"}}
-    <li>“{{.Title | markdownify }},” {{if ne .Role "Panelist" }}{{ .Role }}, {{ end }}{{ .Venue }}, {{ time.Format "January 2, 2006" .Date }}.</li>
+    <li>{{if ne .Role "Panelist" }}{{ .Role }}, {{ end }}“{{.Title | markdownify }},” {{ if .Unit }}{{ .Unit }}, {{ end }}{{ .Venue }}, {{ time.Format "January 2, 2006" .Date }}{{ if .Online }}, (online){{ end }}.</li>
     {{ end }}
     </ul>
 </div>
