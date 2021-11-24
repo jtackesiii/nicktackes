@@ -35,7 +35,7 @@
     {{ end }}
     </ul>
     <div id="news">
-        <h2>News:</h2>
+        <label>News:</label>
             {{ $list := slice }}
             {{ with .Site.Data.cv }}
             {{ $list := append $list .Awards }}

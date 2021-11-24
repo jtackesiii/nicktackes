@@ -19,22 +19,22 @@
     }
 
 #accordion li {
+    padding: 1em;
+    margin-bottom: 1em;
     list-style: none;
     width:100%;
+    border-top: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
     }
 
-#accordion  li label {
-    padding:10px;
+#accordion li label {
     display:block;
-    font-size:2em;
-    line-height:2em;
-    border-bottom: solid 1px;
+    font-size:1.5em;
     }
 
 #accordion label:hover {
     color: turquoise;
     cursor: pointer;
-    border-bottom: solid 1px black;
 }
 
 #accordion .content {
@@ -79,7 +79,7 @@
     font-size: 1.25em;
     margin: 1em;
     padding: 1em;
-    border: solid 1px #ddd;
+    border-top: solid 1px #ddd;
 }
 
 #news p {
@@ -87,8 +87,8 @@
     color: #999;
 }
 
-#news h2 {
-    font-size: 1em;
+#news label {
+    font-size: 1.12em;
 }
 
  @media only screen and (max-width: 700px) {
