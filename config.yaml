@@ -8,18 +8,10 @@ Params:
     menu: ["about", "research", "teaching", "cv"]
     landing: "about"
 
-  about:
-    I am an ethnographer of healing and religion in South Asia.
-    My dissertation project is an investigation of the Gayatri
-    Pariwar and the Brahma Kumaris, two Hindu-adjacent religious
-    institutions whose members anticipate the imminent end of the
-    world. Rather than retreat from society, however, these groups
-    continue to engage their surrounding communities in attempts to
-    provide innovative solutions to contemporary societal problems.
-    My research attends to the branded goods, services, service
-    projects, and ritual engagements that constitute their
-    preparations for the end of this era and the golden age they
-    believe will succeed it.
+  about: |
+    I am an ethnographer of religion in South Asia, with a focus on the intersection of Hinduism, health, media, and the environment.
+
+    My research explores how large-scale religious institutions intervene in consumer culture in attempts to provide solutions to modern societal problems.
 
   social:
     - URL: mailto:jtackesiii@gmail.edu
