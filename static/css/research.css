@@ -3,33 +3,30 @@
     float: right;
     padding-right: 5vw;
     padding-left: 7vw;
-    padding-top: 10%;
+    padding-top: 0;
     padding-bottom: 5vh;
     display: none;
+}
+
+#research h2 {
+    font-size: 1.5rem;
 }
 
 #research:target {
     display: block;
 }
 
-#accordion {
-    margin: auto;
-    padding: 0;
-    width: 50vw;
-    }
-
 #accordion li {
-    padding: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     list-style: none;
     width:100%;
-    border-top: solid 1px #ddd;
-    border-bottom: solid 1px #ddd;
     }
 
 #accordion li label {
     display:block;
-    font-size:1.5em;
+    margin-top: 0.5em;
+    font-size:1.25em;
+    color: #999;
     }
 
 #accordion label:hover {
@@ -42,6 +39,7 @@
     font-size:1.2em;
     line-height:26px;
     text-align: justify;
+    border-bottom: solid 1px #ddd;
 }
 
 #accordion .content p {
@@ -75,20 +73,16 @@
     display: none;
  }
 
-#news {
-    font-size: 1.25em;
+#news, #accordion {
     margin: 1em;
     padding: 1em;
     border-top: solid 1px #ddd;
 }
 
 #news p {
-    padding-bottom: 1em;
+    font-size: 1.25rem;
+    margin-top: 0.5em;
     color: #999;
-}
-
-#news label {
-    font-size: 1.12em;
 }
 
  @media only screen and (max-width: 700px) {

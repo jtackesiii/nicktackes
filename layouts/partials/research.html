@@ -1,5 +1,20 @@
 <div id="research">
     <h2 class="media-title">research</h2>
+    <div id="news">
+        <h2>news</h2>
+            {{ $list := slice }}
+            {{ with .Site.Data.cv }}
+            {{ $list := append $list .Awards }}
+            {{ $list := append $list .Publications }}
+            {{ $list := append $list .Conferences }}
+            {{ $list := sort $list "Date" "desc" }}
+            {{ range first 3 $list }}
+                {{ if eq .Role "Panelist" }}<p>Presented “{{.Title | markdownify }}” at the {{.Venue}} on {{ time.Format "January 2, 2006" .Date }}.</p>{{ end }}
+                {{ if .Type }}<p>Published <a href="{{.URL}}" target="_blank">{{.Title | markdownify}}</a></p>{{ end }}
+                {{ if and (not .Role) (not .Type) }}<p>Received the {{ time.Format "2006" .Date }} {{.Title}}.</p>{{ end }}
+            {{ end }}
+            {{ end }}
+        </div>
     <!-- <div id="tags-box">
     {{ $scratch := newScratch }}
     {{ $scratch.Set "array" (slice) }}
@@ -13,6 +28,7 @@
     {{ end }}
     </div> -->
     <ul id="accordion">
+        <h2>projects</h2>
     {{ range sort .Site.Data.research "Date" "desc"}}
         <li>
             <label for="{{ .Title | anchorize }}"
@@ -34,19 +50,4 @@
         </li>
     {{ end }}
     </ul>
-    <div id="news">
-        <label>News:</label>
-            {{ $list := slice }}
-            {{ with .Site.Data.cv }}
-            {{ $list := append $list .Awards }}
-            {{ $list := append $list .Publications }}
-            {{ $list := append $list .Conferences }}
-            {{ $list := sort $list "Date" "desc" }}
-            {{ range first 3 $list }}
-                {{ if eq .Role "Panelist" }}<p>Presented “{{.Title | markdownify }}” at the {{.Venue}} on {{ time.Format "January 2, 2006" .Date }}.</p>{{ end }}
-                {{ if .Type }}<p>Published <a href="{{.URL}}" target="_blank">{{.Title | markdownify}}</a></p>{{ end }}
-                {{ if and (not .Role) (not .Type) }}<p>Received the {{ time.Format "2006" .Date }} {{.Title}}.</p>{{ end }}
-            {{ end }}
-            {{ end }}
-        </div>
 </div>
