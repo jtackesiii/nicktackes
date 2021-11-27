@@ -36,7 +36,7 @@
                 var radio = document.getElementById('{{ .Title | anchorize }}-content');
                 radio.classList.toggle('invisible');
                 return;
-            ">{{ .Title }}</label>
+            "><i class="fas fa-caret-right"></i> {{ .Title }}</label>
             <input type="radio" name="accordion" id="{{ .Title | anchorize }}">
             <div id="{{ .Title | anchorize }}-content" class="content invisible">
                 <p>
