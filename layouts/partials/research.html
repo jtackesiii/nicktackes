@@ -5,7 +5,7 @@
             {{ $list := slice }}
             {{ with .Site.Data.cv }}
             {{ $list := append $list .Awards }}
-            {{ $list := append $list .Publications }}
+            {{ $list := append $list (where .Publications "Date" "!=" nil) }}
             {{ $list := append $list .Conferences }}
             {{ $list := sort $list "Date" "desc" }}
             {{ range first 3 $list }}
