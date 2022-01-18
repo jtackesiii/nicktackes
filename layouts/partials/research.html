@@ -43,9 +43,9 @@
                     {{ .Description | markdownify }}
                     {{ if isset . "Link" }}<a href="{{ .Link }}" target="_blank">More...</a>{{ end }}
                 </p>
-                <row>
+                <div class="tags">
                     {{ range .tags }}<span class="tag">#{{ . }}</span>{{ end }}
-                </row>
+                </div>
             </div>
         </li>
     {{ end }}

@@ -9,21 +9,7 @@
     {{ partial "about.html" . }}
     {{ partial "research.html" . }}
     {{ partial "teaching.html" . }}
-    <div id="cv">
-        <h2 class="media-title">c.v.</h2>
-        {{ partial "cv/header.html" . }}
-        {{ partial "cv/contact.html" . }}
-        {{ partial "cv/education.html" . }}
-        {{ partial "cv/certificates.html" . }}
-        {{ partial "cv/awards.html" . }}
-        {{ partial "cv/publications.html" . }}
-        {{ partial "cv/conferences.html" . }}
-        {{ partial "cv/memberships.html" . }}
-        {{ partial "cv/languages.html" . }}
-        {{ partial "cv/courses.html" . }}
-        {{ partial "cv/service.html" . }}
-        {{ partial "cv/print.html" . }}
-    </div>
+    {{ partial "cv/_cv.html" . }}
     {{ partial "footer.html" . }}
 </body>
 <script>
