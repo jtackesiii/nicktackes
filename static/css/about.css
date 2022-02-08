@@ -29,9 +29,7 @@
   #about {
     display: block;
     width: 100%;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 10vh;
+    padding-top: 10vh 0 10vw;
   }
   #about p {
     padding-top: 1em;

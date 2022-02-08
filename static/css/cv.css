@@ -119,10 +119,7 @@ p, h1, h2 {
     #cv {
         display: block;
         width: 100%;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        padding-top: 10vh;
-        padding-bottom: 10vh;
+        padding: 10vh 10vw;
     }
 
     #header {

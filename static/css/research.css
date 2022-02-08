@@ -63,7 +63,7 @@
 }
 
 .tag {
-    padding: 0 5px 5px 5px;
+    padding: 0 5px 5px;
     font-size: smaller;
     font-family: 'Courier New', Courier, monospace;
     color: #aaa;
@@ -93,9 +93,7 @@
     #research {
         display: block;
         width: 100%;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        padding-top: 10vh;
+        padding: 10vh 0 10vw;
     }
 
     #accordion {
