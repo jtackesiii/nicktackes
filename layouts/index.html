@@ -5,11 +5,13 @@
 <title>{{.Title}}</title>
 </head>
 <body>
+    <main>
     {{ partial "sidebar.html" . }}
     {{ partial "about.html" . }}
     {{ partial "research.html" . }}
     {{ partial "teaching.html" . }}
     {{ partial "cv/_cv.html" . }}
+    </main>
     {{ partial "footer.html" . }}
 </body>
 <script>

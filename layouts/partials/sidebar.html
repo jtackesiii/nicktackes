@@ -1,13 +1,18 @@
 <div id="sidebar">
     <container id="sidebar-container">
         <img id="sidebar-img" src="{{ .Site.Params.sidebar.img }}">
-        <h2>{{ .Title }}</h2>
     </container>
     <nav id="nav">
+        <h2>{{ .Title }}</h2>
         <ul>
         {{ range .Site.Params.sidebar.menu }}
         <li><a id="{{ . | anchorize }}-anchor" href="#{{ . | anchorize }}">{{ . }}</a></li>
         {{ end }}
         </ul>
+        <div id="social-buttons">
+        {{ range .Site.Params.social }}
+        <a href="{{ .URL }}"><i class="{{ .icon }}"></i></a>
+        {{ end }}
+    </div>
     </nav>
 </div>

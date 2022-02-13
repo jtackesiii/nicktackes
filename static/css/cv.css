@@ -1,27 +1,16 @@
-#cv {
-    width: 65vw;
-    float: right;
-    padding-right: 5vw;
-    padding-left: 7vw;
-    padding-top: 5%;
-    padding-bottom: 5vh;
-    display: none;
-}
-
-#cv:target {
-    display: block;
+#header, #header p {
+    text-align: center;
 }
 
 #cv h3, h4 {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin: 0.5 auto;
 }
 
 #cv h3 {
     font-variant: small-caps;
 }
 
-p, h1, h2 {
+#cv p, #cv h1, #cv h2, #cv tr {
     margin: 0;
 }
 
@@ -31,12 +20,6 @@ p, h1, h2 {
 
 #cv tr td:last-of-type {
     text-align: right;
-}
-
-#cv tr {
-    /* margin-bottom: 1em;
-    margin-top: 0.5em; */
-    margin: 0;
 }
 
 #cv td {
@@ -67,30 +50,22 @@ p, h1, h2 {
     position: fixed;
     bottom: 0;
     right: 0;
-    color: black;
-}
-
-#print-button:hover {
-    color: turquoise;
 }
 
 @media print {
 
-    #print-button {
-        display: none;
-    }
-
-    #sidebar {
+    #print-button, #sidebar, #footer, .hash, .media-title {
         display: none !important;
     }
 
-    #footer {
-        display: none !important;
+    #cv {
+        display: block !important;
     }
 
     #cv {
         width: 100%;
         padding: 0;
+        overflow-y: visible;
     }
 
     #education {
@@ -115,11 +90,9 @@ p, h1, h2 {
 
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 699px) {
     #cv {
         display: block;
-        width: 100%;
-        padding: 10vh 10vw;
     }
 
     #header {

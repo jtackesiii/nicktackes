@@ -15,13 +15,13 @@ Params:
 
   social:
     - URL: mailto:jtackesiii@gmail.edu
-      icon: fas fa-envelope
+      icon: fas fa-envelope fa-lg
     - URL: https://columbia.academia.edu/NickTackes/
-      icon: ai ai-academia
+      icon: ai ai-academia fa-lg
     - URL: https://github.com/jtackesiii
-      icon: fab fa-github
+      icon: fab fa-github fa-lg
     - URL: https://linkedin.com/in/NickTackes
-      icon: fab fa-linkedin
+      icon: fab fa-linkedin fa-lg
 
   credits:
     This site is built on [Hugo](https://gohugo.io),
