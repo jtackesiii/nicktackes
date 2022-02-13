@@ -32,7 +32,9 @@
         <h2>projects</h2>
     {{ range sort .Site.Data.research "Date" "desc"}}
         <li>
-            <label for="{{ .Title | anchorize }}"
+            <label
+            tabindex="0"
+            for="{{ .Title | anchorize }}"
             onclick="javascript:
                 var radio = document.getElementById('{{ .Title | anchorize }}-content');
                 radio.classList.toggle('invisible');

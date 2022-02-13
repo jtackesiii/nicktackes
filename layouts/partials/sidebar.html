@@ -1,6 +1,6 @@
 <div id="sidebar">
     <container id="sidebar-container">
-        <img id="sidebar-img" src="{{ .Site.Params.sidebar.img }}">
+        <img id="sidebar-img" src="{{ .Site.Params.sidebar.img }}" alt="{{ .Site.Params.sidebar.alt }}">
     </container>
     <nav id="nav">
         <h2>{{ .Title }}</h2>
@@ -11,7 +11,7 @@
         </ul>
         <div id="social-buttons">
         {{ range .Site.Params.social }}
-        <a href="{{ .URL }}"><i class="{{ .icon }}"></i></a>
+        <a href="{{ .URL }}" aria-label="{{ .label }}"><i class="{{ .icon }}"></i></a>
         {{ end }}
     </div>
     </nav>

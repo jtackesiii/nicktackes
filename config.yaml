@@ -5,6 +5,7 @@ title: Nick Tackes
 Params:
   sidebar:
     img: "/img/NTprofile3.png"
+    alt: "Photograph of the author"
     menu: ["about", "research", "teaching", "cv"]
     landing: "about"
 
@@ -16,12 +17,16 @@ Params:
   social:
     - URL: mailto:jtackesiii@gmail.edu
       icon: fas fa-envelope fa-lg
+      label: email
     - URL: https://columbia.academia.edu/NickTackes/
       icon: ai ai-academia fa-lg
+      label: academia.edu
     - URL: https://github.com/jtackesiii
       icon: fab fa-github fa-lg
+      label: github
     - URL: https://linkedin.com/in/NickTackes
       icon: fab fa-linkedin fa-lg
+      label: linkedin
 
   credits:
     This site is built on [Hugo](https://gohugo.io),

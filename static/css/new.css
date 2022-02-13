@@ -1,10 +1,24 @@
 :root {
     --gray: #999;
+    --clr-surface: white;
+    --clr-text: black;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --clr-surface: #1a1300;
+        --clr-text: #eee;
+    }
 }
 
 /* layout */
 * {
     margin: 0;
+}
+
+body {
+    background-color: var(--clr-surface);
+    color: var(--clr-text);
 }
 
 main {
@@ -95,11 +109,12 @@ label + input[type='radio'] {
     border: none;
     position: relative;
     text-align: left;
+    color: var(--clr-text);
 }
 
 #credit-box {
     display: flex;
-    background-color: white;
+    background-color: var(--clr-surface);
     flex-direction: column;
     max-width: 90%;
     position: absolute;
@@ -178,7 +193,7 @@ p, #accordion label {
 }
 
 a {
-    color: black;
+    color: var(--clr-text);
 }
 
 nav a {
@@ -189,7 +204,11 @@ ul {
     list-style-type: none;
 }
 
-button:hover, a:hover, #accordion label:hover, .visit-link:hover {
+button:hover,
+a:hover,
+#accordion label:hover,
+#credits:hover,
+.visit-link:hover {
     color: turquoise;
     cursor: pointer;
 }
@@ -205,7 +224,7 @@ button:hover, a:hover, #accordion label:hover, .visit-link:hover {
     font-size: 1em;
     padding: 0 1em;
     border-radius: 25px;
-    background-color: white;
+    background-color: var(--clr-surface);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
