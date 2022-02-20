@@ -90,7 +90,7 @@
 
 }
 
-@media only screen and (max-width: 699px) {
+@media (max-width: 699px) or (max-height: 469px) {
     #cv {
         display: block;
     }
