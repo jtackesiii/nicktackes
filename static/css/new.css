@@ -14,6 +14,7 @@
 /* layout */
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -52,7 +53,7 @@ main {
 }
 
 #sidebar-img {
-    width: clamp(80px, calc(30vw - 2em), 300px);
+    width: clamp(80px, 30vw, 300px);
     margin: 0 auto;
     padding: 1em;
 }
@@ -128,7 +129,7 @@ label + input[type='radio'] {
     padding: 0 1em 1em;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 700px) and (min-height: 470px) {
     main {
         flex-direction: row;
     }
@@ -136,8 +137,7 @@ label + input[type='radio'] {
     #sidebar {
         width: 30vw;
         flex-direction: column;
-        height: calc(100vh - 2em);
-
+        min-height: 100vh;
     }
 
     nav {
@@ -162,8 +162,7 @@ label + input[type='radio'] {
 
     #footer {
         position: absolute;
-        width: calc(30vw + 1em);
-        max-width: calc(300px + 3em);
+        width: 30vw;
     }
 
     .hash {
@@ -202,6 +201,14 @@ nav a {
 
 ul {
     list-style-type: none;
+}
+
+button,
+a,
+#accordion label,
+#credits,
+.visit-link {
+    transition: color 300ms;
 }
 
 button:hover,
@@ -251,11 +258,16 @@ a:hover,
     border-bottom: solid 1px var(--gray);
 }
 
+#accordion p {
+    line-height: 1.75;
+    margin-bottom: 1em;
+}
+
 .visit-link {
     font-size: 1.25em;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 700px) and (min-height: 470px) {
     p, #accordion {
         text-align: justify;
     }
