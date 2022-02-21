@@ -169,7 +169,6 @@ label + input[type='radio'] {
         flex-grow: 1;
         display: none;
         overflow-y: scroll;
-        max-height: 90vh;
     }
 
     .hash:target {
