@@ -12,9 +12,20 @@
 }
 
 /* layout */
-* {
+*,
+:after,
+:before {
     margin: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+:focus {
+    border: 0;
+}
+
+:focus-visible, #credits:focus-visible {
+    outline: max(1px, 0.1em) solid turquoise;
 }
 
 body {
