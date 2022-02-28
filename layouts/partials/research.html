@@ -32,15 +32,15 @@
         <h2>projects</h2>
     {{ range sort .Site.Data.research "Date" "desc"}}
         <li>
-            <label
-            tabindex="0"
-            for="{{ .Title | anchorize }}"
-            onclick="javascript:
+            <button class="research-toggle"
+                onclick="javascript:
                 var radio = document.getElementById('{{ .Title | anchorize }}-content');
                 radio.classList.toggle('invisible');
+                var caret = document.getElementById('{{ .Title | anchorize }}-caret');
+                caret.classList.toggle('open');
                 return;
-            "><i class="fas fa-caret-right caret"></i> {{ .Title }}</label>
-            <input type="radio" name="accordion" id="{{ .Title | anchorize }}">
+            "><i id="{{ .Title | anchorize }}-caret" class="fas fa-caret-right caret"></i> {{ .Title }}</button>
+
             <div id="{{ .Title | anchorize }}-content" class="content invisible">
                 <p>
                     {{ .Description | markdownify }}

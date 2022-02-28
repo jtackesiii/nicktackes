@@ -86,10 +86,6 @@ nav ul {
 
 /* research */
 
-label + input[type='radio'] {
-    display: none;
- }
-
 #accordion {
     margin-left: -2.5em;
 }
@@ -194,7 +190,7 @@ label + input[type='radio'] {
 
 /* design */
 
-p, #accordion label {
+p, .research-toggle {
     font-size: 1.25rem;
     margin-top: 0.5em;
     line-height: 26px;
@@ -214,7 +210,6 @@ ul {
 
 button,
 a,
-#accordion label,
 #credits,
 .visit-link {
     transition: color 300ms;
@@ -222,7 +217,6 @@ a,
 
 button:hover,
 a:hover,
-#accordion label:hover,
 #credits:hover,
 .visit-link:hover {
     color: turquoise;
@@ -252,8 +246,23 @@ a:hover,
     border-top: solid 1px var(--gray);
 }
 
-#news p, #accordion label {
+#news p {
     color: var(--gray);
+}
+
+.research-toggle {
+    border: none;
+    background-color: transparent;
+    color: var(--gray);
+    font-family: serif;
+}
+
+.caret {
+    transform: rotate(0deg);
+}
+
+.caret.open {
+    transform: rotate(90deg);
 }
 
 .tag {
