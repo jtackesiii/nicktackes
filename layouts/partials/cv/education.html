@@ -1,14 +1,17 @@
 <div class="chunk" id="education">
     <h3>Education</h3>
     {{ range sort .Site.Data.cv.Education "Date" "desc" }}
-       <div class="column-container-4">
+       <div class="grid columns-4">
            <div class="list">{{if .Pending }}({{ .Date }}){{else}}{{ time.Format "2006" .Date }}{{end}}</div>
            <div class="list">{{ .Degree }}</div>
            <div class="list">{{ .Focus }}</div>
            <div class="list align-right">{{ .Venue }}</div>
        </div>
         {{ if .Thesis }}
-            <div class="list"><em>Dissertation:</em> "{{ .Thesis }}"</div>
+        <div class="grid thesis">
+            <div><em>Dissertation:</em></div>
+            <div class="list">"{{ .Thesis }}"</div>
+        </div>
         {{end}}
     {{ end }}
 </div>

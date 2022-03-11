@@ -2,7 +2,7 @@
     <h3>Teaching</h3>
     <h4>Instructor of Record</h4>
     {{ range sort (where .Site.Data.cv.Courses "Role" "!=" "Teaching Assistant") "Date" "desc" }}
-    <div class="column-container-3">
+    <div class="grid columns-3">
         <div class="list">{{ .Date }} {{ .Term }}</div>
         <div class="list">{{ .Course }}</div>
         <div class="list align-right">{{ .Venue }}</div>
@@ -10,7 +10,7 @@
     {{ end }}
     <h4>Teaching Assistant</h4>
     {{ range sort (where .Site.Data.cv.Courses "Role" "Teaching Assistant") "Date" "desc" }}
-    <div class="column-container-3">
+    <div class="grid columns-3">
         <div class="list">{{ .Date }} {{ .Term }}</div>
         <div class="list">{{ .Course }}</div>
         <div class="list align-right">{{ .Venue }}</div>

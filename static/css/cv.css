@@ -34,26 +34,29 @@
     margin: auto 0;
 }
 
-.column-container-4 {
+.grid {
     display: grid;
     width: 100%;
+}
+
+.columns-4 {
     grid-template-columns: 20% 15% 25% 40%;
 }
 
-.column-container-3 {
-    display: grid;
-    width: 100%;
+.columns-3 {
     grid-template-columns: 20% 40% 40%;
 }
 
-.column-container-3 * {
+.columns-3 * {
     margin: auto 0;
 }
 
-.column-container-2 {
-    display: grid;
-    width: 100%;
+.columns-2 {
     grid-template-columns: 20% 80%;
+}
+
+.thesis {
+    grid-template-columns: max(85px,20%) 80%;
 }
 
 #cv ul {
