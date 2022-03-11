@@ -1,8 +1,6 @@
 <div class="chunk" id="memberships">
     <h3>Professional Memberships</h3>
-    <ul>
-        {{ range .Site.Data.cv.Memberships }}
-        <li>{{ . }}</li>
-        {{ end }}
-    </ul>
+    {{ range .Site.Data.cv.Memberships }}
+    <div class="list">{{ . }}</div>
+    {{ end }}
 </div>

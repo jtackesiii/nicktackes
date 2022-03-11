@@ -1,15 +1,10 @@
 <div class="chunk" id="awards">
     <h3>Competitive Scholarships and Honors</h3>
-    <table>
-        <colgroup>
-           <col>
-           <col>
-        </colgroup>
     {{ range sort .Site.Data.cv.Awards "Date" "desc" }}
-        <tr>
-            <td style="padding-right: 1em;">{{ time.Format "2006" .Date }}</td>
-            <td style="text-align:left;">{{ .Title }}</td>
-        </tr>
+    <div class="column-container-2">
+        <div class="list">{{ time.Format "2006" .Date }}</div>
+        <div class="list">{{ .Title }}</div>
+    </div>
     {{ end }}
-       </table>
+
 </div>

@@ -1,8 +1,6 @@
 <div class="chunk" id="languages">
     <h3>Languages</h3>
-    <ul>
-        {{ range .Site.Data.cv.Languages}}
-        <li>{{ . }}</li>
-        {{ end }}
-    </ul>
+    {{ range .Site.Data.cv.Languages}}
+    <div class="list">{{ . }}</div>
+    {{ end }}
 </div>

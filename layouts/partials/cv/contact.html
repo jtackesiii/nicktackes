@@ -1,16 +1,10 @@
 <div id="contact">
-<table>
- <colgroup>
-    <col>
-    <col>
- </colgroup>
- <tr>
-    <td>{{ .Site.Data.cv.Address.Work }}</td>
-    <td style="text-align: right;">
+<div class="cv-contact">
+   <div>{{ .Site.Data.cv.Address.Work }}</div>
+   <div class="align-right">
       {{ .Site.Data.cv.Address.Home -}}
       {{ .Site.Data.cv.Contact.Phone }}
       {{ .Site.Data.cv.Contact.Email }}
-    </td>
- </tr>
-</table>
+   </div>
+</div>
 </div>

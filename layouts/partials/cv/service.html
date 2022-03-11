@@ -1,17 +1,10 @@
 <div class="chunk" id="service">
     <h3>Academic Service</h3>
-    <table>
-        <colgroup>
-           <col>
-           <col>
-        </colgroup>
     {{ range sort .Site.Data.cv.Service "Date" "desc" }}
-        <tr>
-            <!-- How to ensure that repeat Dates don't appear? -->
-            <td>{{ .Date }}</td>
-            <td>{{ .Role }}<br>{{ .Beneficiary }}</td>
-            <td>{{ .Venue }}</td>
-        </tr>
+    <div class="column-container-3">
+        <div class="list">{{ .Date }}</div>
+        <div class="list">{{ .Role }}<br>{{ .Beneficiary }}</div>
+        <div class="list align-right">{{ .Venue }}</div>
+    </div>
     {{ end }}
-       </table>
 </div>
