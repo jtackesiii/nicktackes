@@ -115,16 +115,12 @@
 
 }
 
-@media (max-width: 699px) or (max-height: 469px) {
+@media (max-width: 699px), (max-height: 469px) {
     #cv {
         display: block;
     }
 
-    #header {
-        display: none;
-    }
-
-    #print-button {
+    #header, #print-button {
         display: none;
     }
 }
