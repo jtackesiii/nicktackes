@@ -24,7 +24,7 @@
     border: 0;
 }
 
-:focus-visible, #credits:focus-visible {
+:focus-visible, #credits-open:focus-visible {
     outline: max(1px, 0.1em) solid turquoise;
 }
 
@@ -110,7 +110,7 @@ nav ul {
     margin: 0 auto;
 }
 
-#credits {
+/* #credits {
     margin-right: auto;
     padding-top: 1em;
     background-color: transparent;
@@ -133,6 +133,32 @@ nav ul {
     text-align: left;
     font-size: 1.25em;
     padding: 0 1em 1em;
+} */
+
+#credits {
+    padding: 1rem;
+    margin: auto;
+    max-width: min(50ch, 90vw);
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#credits::backdrop {
+    background: rgb(0 0 0 / 0.2);
+}
+
+#credits-open {
+    border: none;
+    background-color: transparent;
+}
+
+#credits-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 1.25rem;
 }
 
 @media (min-width: 700px) and (min-height: 470px) {
@@ -217,7 +243,6 @@ a,
 
 button:hover,
 a:hover,
-#credits:hover,
 .visit-link:hover {
     color: turquoise;
     cursor: pointer;

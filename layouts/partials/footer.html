@@ -1,13 +1,10 @@
 <div id="footer">
-    <div id=credit-box class="white">
-        <button aria-label="website credits" id="credits" onclick="
-             var credits = document.getElementById('credit-text');
-             var creditBox = document.getElementById('credit-box');
-                credits.classList.toggle('invisible');
-                creditBox.classList.toggle('box-shadow');
-                return;
-        "><i class="fas fa-ellipsis-h fa-lg"></i></button>
-        <p id="credit-text" class="invisible">{{ .Site.Params.credits | markdownify }}</p>
-    </div>
+    <button aria-label="website credits" id="credits-open">
+        <i class="fas fa-ellipsis-h fa-lg"></i>
+    </button>
+    <dialog id=credits >
+        <p>{{ .Site.Params.credits | markdownify }}</p>
+        <button aria-label="close dialog" id="credits-close">&times;</button>
+    </dialog>
     <p id="copyright">© {{ now.Format "2006" }} {{ .Site.Data.cv.Name }}</p>
 </div>

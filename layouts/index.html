@@ -22,5 +22,14 @@
         }
     };
     window.onload = openAnchor();
+    const modalOpen = document.querySelector('#credits-open');
+    const modalClose = document.querySelector('#credits-close');
+    const modal = document.querySelector('#credits');
+    modalOpen.addEventListener( 'click', () => {
+        modal.showModal();
+    })
+    modalClose.addEventListener( 'click', () => {
+        modal.close();
+    })
 </script>
 </html>

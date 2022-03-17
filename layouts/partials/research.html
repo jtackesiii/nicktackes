@@ -38,7 +38,6 @@
                 radio.classList.toggle('invisible');
                 var caret = document.getElementById('{{ .Title | anchorize }}-caret');
                 caret.classList.toggle('open');
-                return;
             "><i id="{{ .Title | anchorize }}-caret" class="fas fa-caret-right caret"></i> {{ .Title }}</button>
 
             <div id="{{ .Title | anchorize }}-content" class="content invisible">
