@@ -110,37 +110,13 @@ nav ul {
     margin: 0 auto;
 }
 
-/* #credits {
-    margin-right: auto;
-    padding-top: 1em;
-    background-color: transparent;
-    border: none;
-    position: relative;
-    text-align: left;
-    color: var(--clr-text);
-}
-
-#credit-box {
-    display: flex;
-    background-color: var(--clr-surface);
-    flex-direction: column;
-    position: absolute;
-    left: 1vw;
-    bottom: 1vh;
-}
-
-#credit-text {
-    text-align: left;
-    font-size: 1.25em;
-    padding: 0 1em 1em;
-} */
-
 #credits {
     padding: 1rem;
     margin: auto;
     max-width: min(50ch, 90vw);
     border: none;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
 }
 
 #credits::backdrop {
@@ -149,6 +125,8 @@ nav ul {
 
 #credits-open {
     border: none;
+    width: 30px;
+    margin-inline: 0 -30px;
     background-color: transparent;
 }
 
@@ -161,7 +139,7 @@ nav ul {
     font-size: 1.25rem;
 }
 
-@media (min-width: 700px) and (min-height: 470px) {
+@media (min-width: 755px) and (min-height: 470px) {
     main {
         flex-direction: row;
     }

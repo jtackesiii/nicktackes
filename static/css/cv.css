@@ -115,7 +115,7 @@
 
 }
 
-@media (max-width: 699px), (max-height: 469px) {
+@media (max-width: 754px), (max-height: 469px) {
     #cv {
         display: block;
     }
