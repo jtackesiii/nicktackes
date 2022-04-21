@@ -8,6 +8,7 @@
     :root {
         --clr-surface: #1a1300;
         --clr-text: #eee;
+        color-scheme: dark;
     }
 }
 
