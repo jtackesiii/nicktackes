@@ -21,14 +21,16 @@ collections:
           - label: Address
             name: Address
             widget: list
-            allow_add: false
+            max: 1
+            min: 1
             fields:
             - {label: Work, name: Work, widget: markdown}
             - {label: Home, name: Home, widget: markdown}
           - label: Contact
             name: Contact
             widget: list
-            allow_add: false
+            max: 1
+            min: 1
             fields:
             - {label: Phone, name: Phone, widget: string}
             - {label: email, name: Email, widget: string}
@@ -58,6 +60,7 @@ collections:
             name: Languages
             widget: list
             default: ["English"]
+            hint: 'enter comma-separated languages and proficiencies, e.g. "English (native), Hindi (proficient)"'
           - label: Awards
             name: Awards
             widget: list
@@ -85,6 +88,7 @@ collections:
           - label: Memberships
             name: Memberships
             widget: list
+            hint: 'enter comma-separated entries, e.g. "American Academy of Religion, American Anthropological Association"'
             default: ["American Academy of Religion"]
           - label: Courses
             name: Courses
