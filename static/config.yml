@@ -13,9 +13,9 @@ collections:
   - label: "Data"
     name: "data"
     files:
-      - label: "CV"
-        name: "CV"
-        file: "site/data/cv.yaml"
+      - label: "Test"
+        name: "Test"
+        file: "site/data/test.yaml"
         fields:
           - {label: Name, name: Name, widget: string}
           - label: Address
