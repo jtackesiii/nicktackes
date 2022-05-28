@@ -20,23 +20,32 @@ collections:
           - {label: Name, name: Name, widget: string}
           - label: Address
             name: Address
-            widget: list
-            max: 1
-            min: 1
-            fields:
-            - {label: Work, name: Work, widget: markdown}
-            - {label: Home, name: Home, widget: markdown}
+            - label: Work
+              name: Work
+              widget: markdown
+            - label: Home
+              name: Home
+              widget: markdown
           - label: Contact
             name: Contact
-            widget: list
-            max: 1
-            min: 1
-            fields:
-            - {label: Phone, name: Phone, widget: string}
-            - {label: email, name: Email, widget: string}
-            - {label: Academia, name: Academia, widget: string, hint: '(just your username)'}
-            - {label: Github, name: Github, widget: string, hint: '(just your username)'}
-            - {label: LinkedIn, name: Linkedin, widget: string, hint: '(just your username)'}
+            - label: Phone
+              name: Phone
+              widget: string
+            - label: Email
+              name: Email
+              widget: string
+            - label: Academia.edu
+              name: Academia
+              widget: string
+              hint: 'academia.edu/USERNAME'
+            - label: Github
+              name: Github
+              widget: string
+              hint: 'github.com/USERNAME'
+            - label: LinkedIn
+              name: Linkedin
+              widget: string
+              hint: 'linkedin.com/USERNAME'
           - label: Education
             name: Education
             widget: list
