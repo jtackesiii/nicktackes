@@ -21,26 +21,85 @@ collections:
           - label: Address
             name: Address
             widget: list
+            allow_add: false
             fields:
             - {label: Work, name: Work, widget: markdown}
             - {label: Home, name: Home, widget: markdown}
           - label: Contact
             name: Contact
             widget: list
+            allow_add: false
             fields:
             - {label: Phone, name: Phone, widget: string}
             - {label: email, name: Email, widget: string}
-            - {label: Academia, name: Academia, widget: string}
-            - {label: Github, name: Github, widget: string}
-            - {label: LinkedIn, name: Linkedin, widget: string}
+            - {label: Academia, name: Academia, widget: string, hint: 'just your username'}
+            - {label: Github, name: Github, widget: string, hint: 'just your username'}
+            - {label: LinkedIn, name: Linkedin, widget: string, hint: 'just your username'}
           - label: Education
             name: Education
             widget: list
             fields:
             - {label: Degree, name: Degree, widget: string}
-            - {label: Date, name: Date, widget: datetime, default: "", date_format: YYYY-MM-DD, picker_utc: false}
-            - {label: Venue, name: Venue, widget: string}
-            - {label: Focus, name: Focus, widget: string}
+            - {label: Date, name: Date, widget: datetime, default: "", date_format: YYYY-MM-DD, format: YYYY-MM-DD, picker_utc: false}
+            - {label: Institution, name: Venue, widget: string}
+            - {label: 'Degree Program', name: Focus, widget: string}
             - {label: GPA, name: GPA, widget: number, value_type: float}
-            - {label: Thesis, name: Thesis, widget: string}
-            - {label: Pending, name: Pending, widget: boolean}
+            - {label: 'Thesis Title', name: Thesis, widget: string, required: false}
+            - {label: 'In Progress', name: Pending, widget: boolean, required: false}
+          - label: Certificates
+            name: Certificates
+            widget: list
+            fields:
+            - {label: Accreditation, name: Accreditation, widget: string}
+            - {label: Entity, name: Entity, widget: string, hint: 'center, institute, program, etc.'}
+            - {label: Venue, name: Venue, widget: string, hint: 'institution'}
+            - {label: Date, name: Date, widget: datetime, default: "", date_format: YYYY-MM-DD, format: YYYY-MM-DD, picker_utc: false}
+          - label: Languages
+            name: Languages
+            widget: list
+            default: ["English"]
+          - label: Awards
+            name: Awards
+            widget: list
+            fields:
+            - {label: Title, name: Title, widget: string}
+            - {label: Date, name: Date, widget: datetime, default: "", date_format: YYYY-MM-DD, format: YYYY-MM-DD, picker_utc: false}
+          - label: Publications
+            name: Publications
+            widget: list
+            fields:
+            - {label: Title, name: Title, widget: string}
+            - {label: 'Publication Type', name: Type, widget: select, options: ['Article', 'Book', 'Book Chapter', 'Review']}
+            - {label: Date, name: Date, widget: datetime, default: "", date_format: YYYY-MM-DD, format: YYYY-MM-DD, picker_utc: false}
+            - {label: 'In Progress', name: Pending, widget: boolean, required: false}
+          - label: Conferences
+            name: Conferences
+            widget: list
+            fields:
+            - {label: Title, name: Title, widget: string}
+            - {label: Date, name: Date, widget: datetime, default: "", date_format: YYYY-MM-DD, format: YYYY-MM-DD, picker_utc: false}
+            - {label: Unit, name: Unit, widget: string}
+            - {label: Venue, name: Venue, widget: string}
+            - {label: Online, name: Online, widget: boolean, required: false}
+            - {label: Role, name: Role, widget: select, options: ['Panelist', 'Discussant', 'Chair', 'Invited Speaker']}
+          - label: Memberships
+            name: Memberships
+            widget: list
+            default: ["American Academy of Religion"]
+          - label: Courses
+            name: Courses
+            widget: list
+            fields:
+            - {label: 'Course Title', name: Course, widget: string}
+            - {label: Date, name: Date, widget: number, value_type: int}
+            - {label: Term, name: Term, widget: select, options: ['Fall', 'Spring']}
+            - {label: Institution, name: Venue, widget: string}
+            - {label: Role, name: Role, widget: select, options: ['Instructor of Record', 'Teaching Assistant']}
+          - label: Service
+            name: Service
+            widget: list
+            fields:
+            - {label: Beneficiary, name: Beneficiary, widget: string}
+            - {label: Role, name: Role, widget: string}
+            - {label: Date, name: Date, widget: number, value_type: int}
+            - {label: Venue, name: Venue, widget: string}
