@@ -34,9 +34,9 @@ collections:
             fields:
             - {label: Phone, name: Phone, widget: string}
             - {label: email, name: Email, widget: string}
-            - {label: Academia, name: Academia, widget: string, hint: 'just your username'}
-            - {label: Github, name: Github, widget: string, hint: 'just your username'}
-            - {label: LinkedIn, name: Linkedin, widget: string, hint: 'just your username'}
+            - {label: Academia, name: Academia, widget: string, hint: '(just your username)'}
+            - {label: Github, name: Github, widget: string, hint: '(just your username)'}
+            - {label: LinkedIn, name: Linkedin, widget: string, hint: '(just your username)'}
           - label: Education
             name: Education
             widget: list
@@ -53,14 +53,13 @@ collections:
             widget: list
             fields:
             - {label: Accreditation, name: Accreditation, widget: string}
-            - {label: Entity, name: Entity, widget: string, hint: 'center, institute, program, etc.'}
-            - {label: Venue, name: Venue, widget: string, hint: 'institution'}
+            - {label: Entity, name: Entity, widget: string, hint: '(center, institute, program, etc.)'}
+            - {label: Venue, name: Venue, widget: string, hint: '(institution)'}
             - {label: Date, name: Date, widget: datetime, default: "", date_format: YYYY-MM-DD, format: YYYY-MM-DD, picker_utc: false}
           - label: Languages
             name: Languages
             widget: list
-            default: ["English"]
-            hint: 'enter comma-separated languages and proficiencies, e.g. "English (native), Hindi (proficient)"'
+            field: {label: Language, name: "", widget: string}
           - label: Awards
             name: Awards
             widget: list
@@ -88,8 +87,7 @@ collections:
           - label: Memberships
             name: Memberships
             widget: list
-            hint: 'enter comma-separated entries, e.g. "American Academy of Religion, American Anthropological Association"'
-            default: ["American Academy of Religion"]
+            field: {label: Language, name: "", widget: string}
           - label: Courses
             name: Courses
             widget: list
