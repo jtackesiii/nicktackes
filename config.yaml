@@ -7,7 +7,7 @@ Params:
     img: "/img/NTprofile3.png"
     alt: "Photograph of the author"
     menu: ["about", "research", "teaching", "cv"]
-    landing: "about"
+    landing: ""
 
   about: |
     I am an ethnographer of religion in South Asia, with a focus on the intersection of Hinduism, health, media, and the environment.
