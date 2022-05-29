@@ -17,19 +17,20 @@
 <script>
     // default anchor
     function openAnchor() {
-        if (screen.width > 700) {
+        if (screen.width > 700 && window.location.hash!='/admin/') {
             window.location.hash='#{{ .Site.Params.sidebar.landing }}'
         }
     };
-      if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  } else { window.onload = openAnchor(); }
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+         });
+       }
+      });
+    }
+    window.onload = openAnchor();
     const modalOpen = document.querySelector('#credits-open');
     const modalClose = document.querySelector('#credits-close');
     const modal = document.querySelector('#credits');
