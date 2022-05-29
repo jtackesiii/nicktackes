@@ -62,7 +62,7 @@ collections:
             name: Publications
             widget: list
             fields:
-            - {label: Title, name: Title, widget: string}
+            - {label: Title, name: Title, widget: markdown}
             - {label: 'Publication Type', name: Type, widget: select, options: ['Article', 'Book', 'Book Chapter', 'Review']}
             - {label: Date, name: Date, widget: datetime, default: "", date_format: YYYY-MM-DD, format: YYYY-MM-DD, picker_utc: false}
             - {label: 'In Progress', name: Pending, widget: boolean, required: false}
