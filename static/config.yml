@@ -13,17 +13,21 @@ collections:
   - label: "Data"
     name: "data"
     files:
+      - label: "About"
+        name: "About"
+        file: "/data/about.yaml"
+        fields:
+          - {label: Name, name: Name, widget: string}
+          - {label: Phone, name: Phone, widget: string}
+          - {label: Email, name: Email, widget: string}
+          - {label: Description, name: about, widget: markdown}
+          - {label: "Profile Image", name: img, widget: file, allow_multiple: false, choose_url: false}
       - label: "CV"
         name: "CV"
         file: "/data/cv.yaml"
         fields:
-          - {label: Name, name: Name, widget: string}
-
           - {label: Work, name: Work, widget: markdown}
           - {label: Home, name: Home, widget: markdown}
-
-          - {label: Phone, name: Phone, widget: string}
-          - {label: email, name: Email, widget: string}
 
           - label: Education
             name: Education

@@ -6,5 +6,5 @@
         <p>{{ .Site.Params.credits | markdownify }}</p>
         <button aria-label="close dialog" id="credits-close">&times;</button>
     </dialog>
-    <p id="copyright">© {{ now.Format "2006" }} {{ .Site.Data.cv.Name }}</p>
+    <p id="copyright">© {{ now.Format "2006" }} {{ .Title }}</p>
 </div>

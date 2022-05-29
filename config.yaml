@@ -4,15 +4,9 @@ title: Nick Tackes
 
 Params:
   sidebar:
-    img: "/img/NTprofile3.png"
     alt: "Photograph of the author"
     menu: ["about", "research", "teaching", "cv"]
     landing: "about"
-
-  about: |
-    I am an ethnographer of religion in South Asia, with a focus on the intersection of Hinduism, health, media, and the environment.
-
-    My research explores how large-scale religious institutions intervene in consumer culture in order to provide solutions to modern societal problems.
 
   social:
     - URL: mailto:jtackesiii@gmail.edu
@@ -34,10 +28,3 @@ Params:
     served on [Netlify](https://netlify.com). Icons
     are by [Fontawesome](https://fontawesome.com) and
     [Academicons](https://jpswalsh.github.io/academicons).
-
-  teaching:
-    description:
-      I am currently teaching
-      "Religions of India" in New York University's Religion
-      Department.
-    link: https://as.nyu.edu/religiousstudies/courses/religions-of-india.html
