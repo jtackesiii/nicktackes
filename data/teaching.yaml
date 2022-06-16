@@ -1,6 +1,41 @@
 description:
-      I am currently teaching
-      "Religions of India" in New York University's Religion
-      Department.
+  I currently teach in the Department of Asian Studies at Hamilton College.
 
-link: https://as.nyu.edu/religiousstudies/courses/religions-of-india.html
+courses:
+
+  - course: Religions of India
+    venue: NYU
+    img: "/img/ReligionsIndia.png"
+    desc:
+      "This course is an investigation of religious developments
+      in India within a historical context. Students will familiarize
+      themselves with the religions of the subcontinent—including Hinduism,
+      Buddhism, Jainism, Islam, Sikhism, Christianity, and Judaism—through
+      secondary source readings and English translations of primary source
+      materials. Rather than survey religious traditions as closed systems
+      divorced from time or place, students will grapple with the central
+      theories and historiographical challenges pertaining to religion in
+      India, especially those that impact our ability to understand
+      everyday religious experience, past and present."
+    current: false
+
+  - course: Indian Buddhism
+    venue: Hamilton College
+    img: "/img/IndianBuddhism.png"
+    desc:
+      "This course is an introduction to the origins, essential beliefs,
+      popular practices, and institutions of Buddhism. Students examine the
+      life of Buddha, his teachings (Dharma) and Buddhist communities through
+      a range of Buddhist texts, art, and archaeological sources."
+    current: true
+
+  - course: Sacred Space in South Asia
+    venue: Hamilton College
+    img: "/img/SacredSpaceSouthAsia.png"
+    desc:
+      "Students in this course examine the complex relationship between space,
+      society, and religious identity in South Asia, past and present.
+      The course will draw upon Buddhist, Hindu, and Islamic materials
+      to analyze the ways in which the idea of ‘sacred space’ has been
+      used in political, social, and legal contexts for decidedly secular objectives."
+    current: true

@@ -97,6 +97,53 @@ nav ul {
     flex-wrap: wrap;
 }
 
+/* teaching */
+
+.teaching-portfolio {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1em;
+}
+
+.teaching-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.teaching-card :not(img) {
+    display: none;
+}
+
+.teaching-card img {
+    width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: transform 500ms ease-in-out;
+}
+
+@media (hover: hover) {
+
+    .teaching-card {
+        gap: 1em;
+        grid-template-columns: min(40%, 400px) 1fr;
+    }
+
+    .teaching-card :not(img) {
+        display: block;
+        opacity: 0;
+        transition: 750ms;
+    }
+
+    .teaching-card:hover :not(img) {
+        opacity: 1;
+    }
+
+    .teaching-card:hover img {
+        transform: scale(0.975);
+    }
+
+}
+
 /* footer */
 
 #footer {
@@ -195,7 +242,7 @@ nav ul {
 
 /* design */
 
-p, .research-toggle {
+p,.research-toggle, #teaching li {
     font-size: 1.25rem;
     margin-top: 0.5em;
     line-height: 26px;

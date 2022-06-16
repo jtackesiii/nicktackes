@@ -18,6 +18,14 @@
     line-height: 1.3em;
 }
 
+#employment .list {
+    padding-bottom: 0.5em;
+}
+
+#employment .grid:last-child .list {
+    padding-bottom: 0;
+}
+
 .align-right {
     text-align: right;
 }
@@ -93,8 +101,12 @@
         overflow-y: visible;
     }
 
-    #education {
-        margin-top: -0.8em;
+    #header {
+        display: block !important;
+    }
+
+    #employment, #education {
+        margin-top: -1em;
     }
 
     .chunk {

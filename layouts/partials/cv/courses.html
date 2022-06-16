@@ -1,19 +1,9 @@
 <div class="chunk" id="courses">
     <h3>Teaching</h3>
-    <h4>Instructor of Record</h4>
-    {{ range sort (where .Site.Data.cv.Courses "Role" "!=" "Teaching Assistant") "Date" "desc" }}
-    <div class="grid columns-3">
-        <div class="list">{{ .Date }} {{ .Term }}</div>
-        <div class="list">{{ .Course }}</div>
-        <div class="list align-right">{{ .Venue }}</div>
-    </div>
+    {{ range .Site.Data.cv.Teaching }}
+    <h4>At {{ .Venue }}</h4>
+    {{ range .Courses }}
+    <div class="list">{{ . }}</div>
     {{ end }}
-    <h4>Teaching Assistant</h4>
-    {{ range sort (where .Site.Data.cv.Courses "Role" "Teaching Assistant") "Date" "desc" }}
-    <div class="grid columns-3">
-        <div class="list">{{ .Date }} {{ .Term }}</div>
-        <div class="list">{{ .Course }}</div>
-        <div class="list align-right">{{ .Venue }}</div>
-    </div>
     {{ end }}
 </div>

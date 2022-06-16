@@ -1,0 +1,14 @@
+<div class="chunk" id="employment">
+  <h3>Employment</h3>
+  {{ range sort .Site.Data.cv.Employment "Date" "desc" }}
+  <div class="grid columns-3">
+    <div class="list">
+      {{ $start := time.Format "2006" .Start }}
+      {{ $end := time.Format "2006" .End }}
+      {{ $start }}{{ if .Current }}—{{ else if eq $start $end }}{{ else }}-{{ $end }}{{ end }}
+    </div>
+    <div class="list">{{ .Role }}</div>
+    <div class="list align-right">{{ .Department }}<br />{{ .Venue }}</div>
+  </div>
+  {{ end }}
+</div>

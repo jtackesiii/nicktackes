@@ -7,6 +7,21 @@ Home: |-
   124 N 3rd St., Fl 3
   Philadelphia, PA 19106
 
+Employment:
+
+  - Start: 2022-07-01
+    End: 2023-06-30
+    Role: Visiting Assistant Professor
+    Department: Asian Studies
+    Venue: Hamilton College
+    Current: true
+
+  - Start: 2022-01-16
+    End: 2022-06-30
+    Role: Adjunct Professor
+    Department: Religious Studies
+    Venue: New York University
+
 Education:
 
   - Degree: PhD
@@ -15,7 +30,6 @@ Education:
     Focus: Religion
     GPA: 3.93
     Thesis: "Everyday Eschatology: Centering and Healing in Two Hindu Sects"
-    Pending: true
 
   - Degree: MPhil
     Date: 2019-05-22
@@ -152,13 +166,18 @@ Memberships:
   - American Academy of Religion
   - International Exchange Alumni
 
-Courses:
+Teaching:
 
-  - Course: Religions of India
-    Date: 2022
-    Term: Spring
-    Venue: New York University
-    Role: Instructor of Record
+  - Venue: Hamilton College
+    Courses:
+     - Indian Buddhism
+     - Sacred Space in South Asia
+
+  - Venue: New York University
+    Courses:
+     - Religions of India
+
+TAing:
 
   - Course: Introduction to Judaism
     Date: 2020
