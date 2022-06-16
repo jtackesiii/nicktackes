@@ -15,7 +15,7 @@
      <h3>Past Courses / Courses Taught Elsewhere:</h3>
        {{ range where .Site.Data.teaching.courses "current" "!=" true }}
     <div class="teaching-card">
-      <img loading="lazy" src="{{ .img }}">
+      <img loading="lazy" src="{{ .img }}" alt="{{ .course }}">
      <div>
        <h2>{{ .course }} ({{ .venue }})</h2>
        <p>{{ .desc | markdownify }}</p>
