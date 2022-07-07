@@ -1,6 +1,6 @@
 <div class="chunk" id="education">
     <h3>Education</h3>
-    {{ range sort .Site.Data.cv.Education "Date" "desc" }}
+    {{ range where .Site.Data.cv.Education "Data-only" "!=" true }}
        <div class="grid columns-4">
            <div class="list">{{if .Pending }}({{ time.Format "2006" .Date }}){{else}}{{ time.Format "2006" .Date }}{{end}}</div>
            <div class="list">{{ .Degree }}</div>

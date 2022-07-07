@@ -187,7 +187,7 @@ nav ul {
     font-size: 1.25rem;
 }
 
-@media (min-width: 755px) and (min-height: 470px) {
+@media (min-width: 755px) and (min-height: 510px) {
     main {
         flex-direction: row;
     }
@@ -205,12 +205,14 @@ nav ul {
     }
 
     nav ul {
+        max-height: 25vh;
         text-indent: -1.5em;
         text-align: center;
         font-size: 1.5em;
         display: flex;
         flex-direction: column;
-        margin: auto;
+        justify-content: space-evenly;
+        flex-grow: 1;
     }
 
     #social-buttons {
