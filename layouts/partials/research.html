@@ -10,7 +10,7 @@
             {{ $list := append $list .Conferences }}
             {{ $list := sort $list "Date" "desc" }}
             {{ range first 3 $list }}
-                {{ if eq .Role "Panelist" }}<p>Presented “{{.Title | markdownify }}” at the {{.Venue}} on {{ time.Format "January 2, 2006" .Date }}.</p>{{ end }}
+                {{ if eq .Role "Panelist" }}<p>{{if (time .Date).After now}}Presenting{{else}}Presented{{end}} “{{.Title | markdownify }}” at the {{.Venue}} on {{ time.Format "January 2, 2006" .Date }}.</p>{{ end }}
                 {{ if .Type }}<p>Published <a href="{{.URL}}" target="_blank">{{.Title | markdownify}}</a></p>{{ end }}
                 {{ if and (not .Role) (not .Type) }}<p>Received the {{ time.Format "2006" .Date }} {{.Title}}.</p>{{ end }}
             {{ end }}
