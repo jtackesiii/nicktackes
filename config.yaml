@@ -9,7 +9,7 @@ Params:
     landing: "about"
 
   social:
-    - URL: mailto:jtackesiii@gmail.edu
+    - URL: mailto:jtackes@hamilton.edu
       icon: fas fa-envelope fa-lg
       label: email
     - URL: https://columbia.academia.edu/NickTackes/
