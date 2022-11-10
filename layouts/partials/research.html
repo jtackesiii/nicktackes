@@ -16,7 +16,9 @@
             {{ end }}
             {{ end }}
         </div>
-    <!-- <div id="tags-box">
+    <div id="projects">
+    <h2>projects</h2>
+    {{/*  <div id="tags-box">
     {{ $scratch := newScratch }}
     {{ $scratch.Set "array" (slice) }}
     {{ range .Site.Data.research }}
@@ -27,9 +29,8 @@
     {{ range $list }}
     <a class="tag">#{{ . }}</a>
     {{ end }}
-    </div> -->
+    </div>  */}}
     <ul id="accordion">
-        <h2>projects</h2>
     {{ range sort .Site.Data.research "Date" "desc"}}
         <li>
             <button class="research-toggle"
@@ -52,5 +53,6 @@
         </li>
     {{ end }}
     </ul>
+    </div>
     </div>
 </div>

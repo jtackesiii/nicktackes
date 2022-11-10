@@ -293,7 +293,7 @@ a:hover,
 
 /* research */
 
-#news, #accordion {
+#news, #projects {
     margin: 1em;
     padding: 1em;
     border-top: solid 1px var(--gray);
@@ -301,6 +301,10 @@ a:hover,
 
 #news p {
     color: var(--gray);
+}
+
+#tags-box {
+    padding-block: 1em;
 }
 
 .research-toggle {
