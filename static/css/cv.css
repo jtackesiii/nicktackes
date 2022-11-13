@@ -14,15 +14,11 @@
     margin: 0;
 }
 
-.list {
-    line-height: 1.3em;
-}
-
-#employment .list {
+.row {
     padding-bottom: 0.5em;
 }
 
-#employment .grid:last-child .list {
+.chunk .row:last-of-type {
     padding-bottom: 0;
 }
 

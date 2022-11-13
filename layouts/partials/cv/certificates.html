@@ -1,7 +1,7 @@
 <div class="chunk" id="certificates">
     <h3>Certificates</h3>
     {{ range sort .Site.Data.cv.Certificates "Date" "desc" }}
-    <div class="grid columns-3">
+    <div class="grid columns-3 row">
         <div class="list">{{ time.Format "2006" .Date }}</div>
         <div class="list">{{ .Entity }}<br>{{ .Accreditation }}</div>
         <div class="list align-right">{{ .Venue }}</div>

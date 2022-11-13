@@ -1,7 +1,7 @@
 <div class="chunk" id="service">
     <h3>Academic Service</h3>
     {{ range sort .Site.Data.cv.Service "Date" "desc" }}
-    <div class="grid columns-3">
+    <div class="grid columns-3 row">
         <div class="list">{{ .Date }}</div>
         <div class="list">{{ .Role }}<br>{{ .Beneficiary }}</div>
         <div class="list align-right">{{ .Venue }}</div>
