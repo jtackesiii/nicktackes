@@ -2,8 +2,8 @@
     <h3>Teaching</h3>
     {{ range .Site.Data.cv.Teaching }}
     <h4>At {{ .Venue }}</h4>
-    {{ range .Courses }}
-    <div class="list">{{ . }}</div>
+    {{ range sort .Courses }}
+    <div class="list">{{ . | markdownify }}</div>
     {{ end }}
     {{ end }}
 </div>

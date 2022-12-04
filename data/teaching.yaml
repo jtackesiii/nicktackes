@@ -27,7 +27,7 @@ courses:
       popular practices, and institutions of Buddhism. Students examine the
       life of Buddha, his teachings (Dharma) and Buddhist communities through
       a range of Buddhist texts, art, and archaeological sources."
-    current: true
+    current: false
 
   - course: Sacred Space in South Asia
     venue: Hamilton College
@@ -38,52 +38,43 @@ courses:
       The course will draw upon Buddhist, Hindu, and Islamic materials
       to analyze the ways in which the idea of ‘sacred space’ has been
       used in political, social, and legal contexts for decidedly secular objectives."
+    current: false
+
+  - course: "Gurus, Godmen, Godwomen"
+    venue: Hamilton College
+    img: "/img/GurusGodmenGodwomen.png"
+    desc:
+      "What leads people to place unwavering faith in others? What are the ramifications of relationships between everyday people and those they revere as semi-divine? This course explores issues of faith and charisma within weekly case studies of Indian gurus, popularly referred to as “godmen” or “godwomen.” We will investigate how such figures gain, use, and sometimes lose popularity and power. The primary context of this course is Hindu India, but we will also consider notable examples of gurus who have gained appeal in the US. The final six weeks of the course will involve an intensive collaborative archival project in conjunction with Hamilton College’s Special Collections and LITS."
     current: true
 
-  # - course: Gurus, Godmen, Godwomen
-  #   venue: Hamilton College
-  #   img: ""
-  #   desc:
-  #     "What leads people to place unwavering faith in others? What are the
-  #     ramifications of relationships between everyday people and those they revere
-  #     as semi-divine? This course explores issues of faith and charisma within weekly
-  #     case studies of Indian gurus, popularly referred to as “godmen” or “godwomen.”
-  #     We will investigate how such figures gain, use, and sometimes lose popularity
-  #     and power. The primary context of this course is Hindu India, but we also
-  #     attend to international gurus such as Swami Vivekananda, Osho, and Maharishi
-  #     Mahesh Yogi (the Beatles’ guru). The final week explores the viability of the
-  #     “guru” category to describe popular US influencers such as Oprah Winfrey and
-  #     Kanye West."
-  #   current: false
+  - course: Hinduism and Healing
+    venue: Hamilton College
+    img: "/img/HinduismHealing.png"
+    desc:
+      "How do Hindus understand and pursue health? To what extent do historical,
+      regional, class-based, gender-based, age-based, and other differences impact
+      the stakes, objects, and methods of healing? How can healing help us understand
+      what it means to be or become Hindu? We will investigate these idiosyncrasies
+      and overlaps by considering various instruments of healing. We will examine
+      five such instruments in this course, without any presumption that these are
+      the only five: healing with medicine, with persona, with place, with bodies,
+      and with posture. Due to the timeliness of the topic, the sixth unit departs
+      from the “instrument” model and instead considers Hindu responses to COVID-19."
+    current: true
 
-  # - course: Hinduism and Healing
-  #   venue: Hamilton College
-  #   img: ""
-  #   desc:
-  #     "How do Hindus understand and pursue health? To what extent do historical,
-  #     regional, class-based, gender-based, age-based, and other differences impact
-  #     the stakes, objects, and methods of healing? How can healing help us understand
-  #     what it means to be or become Hindu? We will investigate these idiosyncrasies
-  #     and overlaps by considering various *instruments* of healing. We will examine
-  #     five such instruments in this course, without any presumption that these are
-  #     the only five: healing with medicine, with persona, with place, with bodies,
-  #     and with posture. Due to the timeliness of the topic, the sixth unit departs
-  #     from the “instrument” model and instead considers Hindu responses to COVID-19."
-  #   current: false
-
-  # - course: Mother Nature--Climate Crisis--Hinduism
-  #   venue: Hamilton College
-  #   img: ""
-  #   desc:
-  #     "Is religion good or bad for the natural world? How do we conceptualize
-  #     ecosystems, environments, and the relationship of humans to other forms of
-  #     life? How do the attitudes and practices that emerge from such ideas protect
-  #     or imperil the physical environments in which we live? Using Hindu contexts
-  #     as case studies, we will consider the relationship between religion and the
-  #     environment. No prior coursework on Hinduism is required. The course generally
-  #     progresses in two-week pairs. During the first week of each pair, we will
-  #     consider how Hindus ascribe divinity to various facets of the natural world.
-  #     During the second week of each pair, we will evaluate religious responses
-  #     to ecological disasters that threaten the inviolability of the environment
-  #     as sacred space."
-  #   current: false
+  - course: Mother Nature--Climate Crisis--Hinduism
+    venue: Hamilton College
+    img: "/img/MotherNature.png"
+    desc:
+      "Is religion good or bad for the natural world? How do we conceptualize
+      ecosystems, environments, and the relationship of humans to other forms of
+      life? How do the attitudes and practices that emerge from such ideas protect
+      or imperil the physical environments in which we live? Using Hindu contexts
+      as case studies, we will consider the relationship between religion and the
+      environment. No prior coursework on Hinduism is required. The course generally
+      progresses in two-week pairs. During the first week of each pair, we will
+      consider how Hindus ascribe divinity to various facets of the natural world.
+      During the second week of each pair, we will evaluate religious responses
+      to ecological disasters that threaten the inviolability of the environment
+      as sacred space."
+    current: true
