@@ -224,6 +224,11 @@ TAing:
 
 Service:
 
+  - Beneficiary:
+    Role: External Reviewer
+    Date: 2022
+    Venue: Social Sciences and Humanities Research Council of Canada
+
   - Beneficiary: Teacher-Scholar Enrichment Working Group (AHA! Group)
     Role: Principal Investigator
     Date: 2022
