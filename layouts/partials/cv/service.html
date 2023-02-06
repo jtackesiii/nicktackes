@@ -3,7 +3,7 @@
     {{ range sort .Site.Data.cv.Service "Date" "desc" }}
     <div class="grid columns-3 row">
         <div class="list">{{ .Date }}</div>
-        <div class="list">{{ .Role }}<br>{{ .Beneficiary }}</div>
+        <div class="list"><em>{{ .Role }}</em><br>{{ .Beneficiary }}</div>
         <div class="list align-right">{{ .Venue }}</div>
     </div>
     {{ end }}
