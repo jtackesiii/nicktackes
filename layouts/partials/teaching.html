@@ -1,26 +1,16 @@
 <div id="teaching" class="hash">
-  <div class="teaching-portfolio">
-    <h2 class="media-title">teaching</h2>
-    <p>{{ .Site.Data.teaching.description }}</p>
-    <h3>Current Courses:</h3>
+  <h2 class="media-title">teaching</h2>
+  <p>{{ .Site.Data.teaching.description }}</p>
+  <h3 class="teaching-heading">Current Courses:</h3>
+  <div class="course-grid">
   {{ range where .Site.Data.teaching.courses "current" "==" true }}
-    <div class="teaching-card">
-      <img src="{{ .img }}">
-     <div>
-       <h2>{{ .course }}</h2>
-       <p>{{ .desc | markdownify }}</p>
-     </div>
-     </div>
-  {{ end }}
-     <h3>Past Courses / Courses Taught Elsewhere:</h3>
-       {{ range where .Site.Data.teaching.courses "current" "!=" true }}
-    <div class="teaching-card">
-      <img loading="lazy" src="{{ .img }}" alt="{{ .course }}">
-     <div>
-       <h2>{{ .course }} ({{ .venue }})</h2>
-       <p>{{ .desc | markdownify }}</p>
-     </div>
-     </div>
+    <img src="{{ .img }}">
   {{ end }}
   </div>
+     <h3 class="teaching-heading">Past Courses / Courses Taught Elsewhere:</h3>
+       {{ range where .Site.Data.teaching.courses "current" "!=" true }}
+       <ul>
+        <li>{{ .course }} ({{ .venue }})</li>
+       </ul>
+  {{ end }}
 </div>

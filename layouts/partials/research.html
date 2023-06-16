@@ -30,7 +30,7 @@
     <a class="tag">#{{ . }}</a>
     {{ end }}
     </div>  */}}
-    <ul id="accordion">
+    <ul id="accordion" class="unstyled-list">
     {{ range sort .Site.Data.research "Date" "desc"}}
         <li>
             <button class="research-toggle"

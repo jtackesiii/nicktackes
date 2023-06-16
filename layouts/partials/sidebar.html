@@ -4,7 +4,7 @@
     </container>
     <nav id="nav">
         <h2>{{ .Title }}</h2>
-        <ul>
+        <ul class="unstyled-list">
         {{ range .Site.Params.sidebar.menu }}
         <li><a id="{{ . | anchorize }}-anchor" href="#{{ . | anchorize }}">{{ . }}</a></li>
         {{ end }}
