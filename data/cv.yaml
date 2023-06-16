@@ -1,5 +1,5 @@
 Work: |-
-  Asian Studies Department
+  Religious Studies Department
   Hamilton College
   198 College Hill Road
   Clinton, NY 13323
@@ -9,12 +9,18 @@ Home: |-
 
 Employment:
 
+  - Start: 2023-07-01
+    End: 2024-06-30
+    Role: Visiting Assistant Professor
+    Department: Religious Studies
+    Venue: Hamilton College
+    Current: true
+
   - Start: 2022-07-01
     End: 2023-06-30
     Role: Visiting Assistant Professor
     Department: Asian Studies
     Venue: Hamilton College
-    Current: true
 
   - Start: 2022-01-16
     End: 2022-06-30
@@ -192,6 +198,7 @@ Teaching:
      - Hinduism and Healing
      - Gurus, Godmen, Godwomen
      - Mother Nature---Climate Crisis
+     - Religion and Healing in Global Perspective
 
   - Venue: New York University
     Courses:
@@ -224,6 +231,11 @@ TAing:
     Role: Teaching Assistant
 
 Service:
+
+  - Beneficiary: Works-in-Progress Group
+    Role: Participant
+    Date: 2023
+    Venue: Hamilton College
 
   - Beneficiary:
     Role: External Reviewer
