@@ -8,9 +8,9 @@
   {{ end }}
   </div>
      <h3 class="teaching-heading">Past Courses / Courses Taught Elsewhere:</h3>
-       {{ range where .Site.Data.teaching.courses "current" "!=" true }}
+  {{ range where .Site.Data.teaching.courses "current" "!=" true }}
        <ul>
-        <li>{{ .course }} ({{ .venue }})</li>
+        <li>{{ .course }}</li>
        </ul>
   {{ end }}
 </div>

@@ -1,5 +1,5 @@
 <div id="research" class="hash">
-    <div class="container">
+<div class="container">
     <h2 class="media-title">research</h2>
     <div id="news">
         <h2>news</h2>
@@ -15,44 +15,30 @@
                 {{ if and (not .Role) (not .Type) }}<p>Received the {{ time.Format "2006" .Date }} {{.Title}}.</p>{{ end }}
             {{ end }}
             {{ end }}
-        </div>
+    </div>
     <div id="projects">
-    <h2>projects</h2>
-    {{/*  <div id="tags-box">
-    {{ $scratch := newScratch }}
-    {{ $scratch.Set "array" (slice) }}
-    {{ range .Site.Data.research }}
-    {{ range .tags }}
-    {{ $scratch.Add "array" . }}
-    {{ end }}{{ end }}
-    {{ $list := $scratch.Get "array" | uniq }}
-    {{ range $list }}
-    <a class="tag">#{{ . }}</a>
-    {{ end }}
-    </div>  */}}
-    <ul id="accordion" class="unstyled-list">
-    {{ range sort .Site.Data.research "Date" "desc"}}
-        <li>
-            <button class="research-toggle"
-                onclick="javascript:
-                var radio = document.getElementById('{{ .Title | anchorize }}-content');
-                radio.classList.toggle('invisible');
-                var caret = document.getElementById('{{ .Title | anchorize }}-caret');
-                caret.classList.toggle('open');
-            "><i id="{{ .Title | anchorize }}-caret" class="fas fa-caret-right caret"></i> {{ .Title }}</button>
+        <h2>projects</h2>
+        <ul class="project-list">
+            {{ range sort .Site.Data.research "Date" "desc"}}
+            <li><a class="research-toggle" href="#{{ .Title | anchorize }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
 
-            <div id="{{ .Title | anchorize }}-content" class="content invisible">
-                <p>
-                    {{ .Description | markdownify }}
-                </p>
-                {{ if isset . "Link" }}<a class="visit-link" href="{{ .Link }}" target="_blank">More...</a>{{ end }}
-                <div class="tags">
-                    {{ range .tags }}<span class="tag">#{{ . }}</span>{{ end }}
-                </div>
+        {{ range sort .Site.Data.research "Date" "desc"}}
+        <div id="{{ .Title | anchorize }}" class="research-project">
+            <h3>{{ .Title }}</h3>
+            <div class="tags">
+            {{ range .tags }}<span class="tag">#{{ . }}</span>{{ end }}
             </div>
-        </li>
-    {{ end }}
-    </ul>
+            <p>
+            {{ .Description | markdownify }}
+            </p>
+            {{ if isset . "Link" }}
+            <a class="visit-link" href="{{ .Link }}" target="_blank">More...</a>
+            {{ end }}
+        </div>
+        {{ end }}
+
     </div>
-    </div>
+</div>
 </div>

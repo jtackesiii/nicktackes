@@ -15,13 +15,15 @@
     {{ partial "footer.html" . }}
   </body>
   <script>
-    // default anchor
+    // default anchor and tabindex override
     function openAnchor() {
       if (screen.width > 700 && window.location.hash != "/admin/") {
         window.location.hash = "#{{ .Site.Params.sidebar.landing }}";
       }
     }
     openAnchor();
+
+    // credits modal
     const modalOpen = document.querySelector("#credits-open");
     const modalClose = document.querySelector("#credits-close");
     const modal = document.querySelector("#credits");

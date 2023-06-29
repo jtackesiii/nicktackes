@@ -18,11 +18,6 @@ courses:
     img: "/img/SacredSpaceSouthAsia.png"
     current: false
 
-  - course: "Gurus, Godmen, Godwomen"
-    venue: Hamilton College
-    img: "/img/GurusGodmenGodwomen.png"
-    current: false
-
   - course: Hinduism and Healing
     venue: Hamilton College
     img: "/img/HinduismHealing.png"
