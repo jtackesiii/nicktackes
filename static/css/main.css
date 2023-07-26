@@ -30,6 +30,10 @@
     outline: max(1px, 0.1em) solid var(--clr-accent);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--clr-surface);
     color: var(--clr-primary);

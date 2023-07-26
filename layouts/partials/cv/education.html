@@ -14,4 +14,19 @@
         </div>
         {{end}}
     {{ end }}
+    <h4>Certificates</h4>
+    {{ range sort .Site.Data.cv.Certificates "Date" "desc" }}
+    <div class="grid columns-3 row">
+        <div class="list">{{ time.Format "2006" .Date }}</div>
+        <div class="list">{{ .Entity }}<br>{{ .Accreditation }}</div>
+        <div class="list align-right">{{ .Venue }}</div>
+    </div>
+    {{ end }}
+    <h4>Other Training</h4>
+    {{ range sort .Site.Data.cv.OtherEducation "Date" "desc" }}
+    <div class="grid columns-2 row">
+        <div class="list">{{ time.Format "2006" .Date }}</div>
+        <div class="list">{{ .Accreditation }}<br>{{ .Entity }}</div>
+    </div>
+    {{ end }}
 </div>

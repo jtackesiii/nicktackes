@@ -67,6 +67,12 @@ Certificates:
     Venue: Columbia University
     Date: 2020-02-12
 
+OtherEducation:
+
+ - Accreditation: Early Career Researcher Workshop
+   Entity: International Network for the Study of Science and Belief in Society
+   Date: 2023-07-10
+
 Languages:
   - English (native)
   - Hindi (fluent)
@@ -109,7 +115,7 @@ Awards:
 Publications:
 
   - Title: "“‘Sankalp se Siddhi’: The Brahma Kumaris and Pandemic Positivity.” *CoronAsur: Religion & COVID-19* (blog). April 5, 2022."
-    Type: Article
+    Type: Other
     URL: https://ari.nus.edu.sg/20331-107/
     Date: 2022-04-05
 
@@ -124,7 +130,7 @@ Publications:
     Date: 2021-08-18
 
   - Title: "“Metabolic Living: Food, Fat, and the Absorption of Illness in India by Harris Solomon (Review).” *Global Public Health* 11, no.2 (2018): 318-19."
-    Type: Review
+    Type: Other
     URL: https://doi.org/10.1080/17441692.2018.1511742
     Date: 2018-08-18
 
@@ -232,18 +238,13 @@ TAing:
 
 Service:
 
-  - Beneficiary: Works-in-Progress Group
-    Role: Participant
-    Date: 2023
-    Venue: Hamilton College
-
   - Beneficiary:
     Role: External Reviewer
     Date: 2022
     Venue: Social Sciences and Humanities Research Council of Canada
 
-  - Beneficiary: Works-in-Progress Group
-    Role: Peer Reviewer
+  - Beneficiary: South Asian Studies Working Group
+    Role: Participant
     Date: 2022
     Venue: Hamilton College
 

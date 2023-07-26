@@ -51,7 +51,7 @@
     grid-template-columns: 20% 40% 40%;
 }
 
-.columns-3 * {
+.columns-3 *, .columns-2 * {
     margin: auto 0;
 }
 
