@@ -230,9 +230,21 @@ nav ul {
         overflow-y: scroll;
     }
 
-    .hash:target, .hash:has(*:target) {
+    .hash:target {
         display: block;
     }
+
+    .project-list {
+      display: none;
+    }
+
+    @supports selector(:has(*:target)) {
+        .hash:has(*:target), .project-list {
+            display: block;
+        }
+    }
+
+
 
     .media-title {
         display: none;

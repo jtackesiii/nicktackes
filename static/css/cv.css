@@ -10,6 +10,10 @@
     font-variant: small-caps;
 }
 
+#cv h3 ~ * {
+    padding-left: 1ch;
+}
+
 #cv p, #cv h1, #cv h2 {
     margin: 0;
 }
@@ -20,6 +24,10 @@
 
 .chunk .row:last-of-type {
     padding-bottom: 0;
+}
+
+.row + h4 {
+    margin-top: 0;
 }
 
 .align-right {
@@ -84,6 +92,16 @@
     right: 0;
 }
 
+@media (max-width: 754px), (max-height: 469px) {
+    #cv {
+        display: block;
+    }
+
+    #header, #print-button {
+        display: none;
+    }
+}
+
 @media print {
 
     #print-button, #sidebar, #footer, .hash, .media-title {
@@ -95,6 +113,12 @@
         width: 100%;
         padding: 0;
         overflow-y: visible;
+    }
+
+    #contact {
+        display: block;
+        margin-top: -0.9in;
+
     }
 
     #header {
@@ -121,14 +145,4 @@
         margin: 1in;
     }
 
-}
-
-@media (max-width: 754px), (max-height: 469px) {
-    #cv {
-        display: block;
-    }
-
-    #header, #print-button {
-        display: none;
-    }
 }
