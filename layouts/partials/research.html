@@ -7,7 +7,7 @@
             {{ with .Site.Data.cv }}
             {{ $list := append $list .Awards }}
             {{ $list := append $list (where .Publications "Draft" "!=" true) }}
-            {{ $list := append $list .Conferences }}
+            {{ $list := append $list (where .Conferences "Role" "=" "Panelist") }}
             {{ $list := sort $list "Date" "desc" }}
             {{ range first 3 $list }}
                 {{ if eq .Role "Panelist" }}<p>{{if (time .Date).After now}}Presenting{{else}}Presented{{end}} “{{.Title | markdownify }}” at the {{.Venue}} on {{ time.Format "January 2, 2006" .Date }}.</p>{{ end }}
