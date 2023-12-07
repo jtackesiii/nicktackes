@@ -20,8 +20,8 @@ courses:
 
   - course: Hinduism and Healing
     venue: Hamilton College
-    img: "/img/HinduismHealing.png"
-    current: false
+    img: "/img/2024HH.png"
+    current: true
 
   - course: Mother Nature--Climate Crisis--Hinduism
     venue: Hamilton College
@@ -30,10 +30,15 @@ courses:
 
   - course: Gurus, Godmen, Godwomen
     venue: Hamilton College
-    img: "/img/2023ggg.jpg"
+    img: "/img/2024GGG.png"
     current: true
 
   - course: Religion and Healing in Global Perspective
     venue: Hamilton College
     img: "/img/2023rhgp.jpg"
+    current: false
+
+  - course: Encountering Hinduism
+    venue: Hamilton College
+    img: "/img/2024EH.png"
     current: true
