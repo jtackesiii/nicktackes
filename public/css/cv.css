@@ -1,0 +1,148 @@
+#header, #header p {
+    text-align: center;
+}
+
+#cv h3, h4 {
+    margin: 0.5em auto;
+}
+
+#cv h3 {
+    font-variant: small-caps;
+}
+
+#cv h3 ~ * {
+    padding-left: 1ch;
+}
+
+#cv p, #cv h1, #cv h2 {
+    margin: 0;
+}
+
+.row {
+    padding-bottom: 0.5em;
+}
+
+.chunk .row:last-of-type {
+    padding-bottom: 0;
+}
+
+.row + h4 {
+    margin-top: 0;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.cv-contact {
+    display: grid;
+    width: 100%;
+    grid-auto-flow: column;
+    white-space:pre-wrap;
+    word-wrap:break-word;
+}
+
+.cv-contact * {
+    margin: auto 0;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+}
+
+.columns-4 {
+    grid-template-columns: 20% 15% 25% 40%;
+}
+
+.columns-3 {
+    grid-template-columns: 20% 40% 40%;
+}
+
+.columns-3 *, .columns-2 * {
+    margin: auto 0;
+}
+
+.columns-2 {
+    grid-template-columns: 20% 80%;
+}
+
+.thesis {
+    grid-template-columns: max(85px,20%) 80%;
+}
+
+#cv ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+#cv li {
+    list-style-type: none;
+    padding-left: 2em ;
+    text-indent: -2em ;
+    padding-bottom: 5px;
+}
+
+#print-button {
+    padding-bottom: 2vh;
+    padding-right: 1vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width: 754px), (max-height: 469px) {
+    #cv {
+        display: block;
+    }
+
+    #header, #print-button {
+        display: none;
+    }
+}
+
+@media print {
+
+    #print-button, #sidebar, #footer, .hash, .media-title {
+        display: none !important;
+    }
+
+    #cv {
+        display: block !important;
+        width: 100%;
+        padding: 0;
+        overflow-y: visible;
+    }
+
+    #contact {
+        display: block;
+        margin-top: -0.9in;
+
+    }
+
+    #header {
+        display: block !important;
+    }
+
+    #employment, #education {
+        margin-top: -1em;
+    }
+
+    .chunk {
+        page-break-inside: avoid;
+    }
+
+    h1 {
+        font-size: large;
+    }
+
+    #cv h3, h4 {
+        margin-bottom: 0;
+    }
+
+    @page {
+        margin: 1in;
+    }
+
+}
