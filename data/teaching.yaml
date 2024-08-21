@@ -1,7 +1,12 @@
 description:
-  I teach in the Department of Religious Studies at Hamilton College.
+  I teach in the Theology Department at Xavier University.
 
 courses:
+
+  - course: Introduction to Theology
+    venue: Xavier University
+    img: "/img/2024theo111.png"
+    current: true
 
   - course: Religions of India
     venue: NYU
@@ -21,7 +26,7 @@ courses:
   - course: Hinduism and Healing
     venue: Hamilton College
     img: "/img/2024HH.png"
-    current: true
+    current: false
 
   - course: Mother Nature--Climate Crisis--Hinduism
     venue: Hamilton College
@@ -31,7 +36,7 @@ courses:
   - course: Gurus, Godmen, Godwomen
     venue: Hamilton College
     img: "/img/2024GGG.png"
-    current: true
+    current: false
 
   - course: Religion and Healing in Global Perspective
     venue: Hamilton College
@@ -41,4 +46,4 @@ courses:
   - course: Encountering Hinduism
     venue: Hamilton College
     img: "/img/2024EH.png"
-    current: true
+    current: false
