@@ -1,6 +1,13 @@
 <div class="chunk" id="publications">
     <h3>Publications</h3>
     <ul>
+        <!-- {{ range sort (where .Site.Data.cv.Publications "Type" "Book") "Date" "desc"}}
+        <li>{{.Title | markdownify }} <a href="{{.URL}}" target="_blank">{{.URL}}</a></li>
+        {{ end }}
+        {{ range sort (where .Site.Data.cv.Publications "Type" "Book Chapter") "Date" "desc" }}
+        <li>{{.Title | markdownify }} <a href="{{.URL}}" target="_blank">{{.URL}}</a></li>
+        {{ end }}
+        !-->
         <h4>Articles</h4>
         {{ range sort (where .Site.Data.cv.Publications "Type" "Article") "Date" "desc"}}
        <li>{{ time.Format "2006" .Date }}. {{.Title | markdownify }} <a href="{{.URL}}" target="_blank">{{.URL}}.</a></li>
@@ -9,15 +16,9 @@
         {{ range sort (where .Site.Data.cv.Publications "Type" "Other") "Date" "desc"}}
        <li>{{ time.Format "2006" .Date }}. {{.Title | markdownify }} <a href="{{.URL}}" target="_blank">{{.URL}}.</a></li>
        {{ end }}
-    <!-- {{ range sort (where .Site.Data.cv.Publications "Type" "Book") "Date" "desc"}}
-    <li>{{.Title | markdownify }} <a href="{{.URL}}" target="_blank">{{.URL}}</a></li>
-    {{ end }}
-    {{ range sort (where .Site.Data.cv.Publications "Type" "Book Chapter") "Date" "desc" }}
-    <li>{{.Title | markdownify }} <a href="{{.URL}}" target="_blank">{{.URL}}</a></li>
-    {{ end }}
-    {{ range sort .Site.Data.cv.Publications "Date" "desc" }}
-    <li>{{.Title | markdownify }} <a href="{{.URL}}" target="_blank">{{.URL}}</a></li>
-    {{ end }}
-    !-->
+        <h4>Scholarly Websites</h4>
+        {{ range sort (where .Site.Data.cv.Publications "Type" "Website") "Date" "desc"}}
+       <li>{{.Date }}. {{.Title | markdownify }}. <a href="{{.URL}}" target="_blank">{{.URL}}</a>.</li>
+       {{ end }}
     </ul>
 </div>
