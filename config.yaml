@@ -15,12 +15,13 @@ Params:
     - URL: https://columbia.academia.edu/NickTackes/
       icon: ai ai-academia fa-lg
       label: academia.edu
+    - URL: https://orcid.org/0009-0008-7460-3126
+      icon: ai ai-orcid fa-lg
+      label: ORCiD
     - URL: https://github.com/jtackesiii
       icon: fab fa-github fa-lg
       label: github
-    - URL: https://linkedin.com/in/NickTackes
-      icon: fab fa-linkedin fa-lg
-      label: linkedin
+
 
   credits:
     This site is built on [Hugo](https://gohugo.io),
