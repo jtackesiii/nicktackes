@@ -18,7 +18,7 @@
        {{ end }}
         <h4>Scholarly Websites</h4>
         {{ range sort (where .Site.Data.cv.Publications "Type" "Website") "Date" "desc"}}
-       <li>{{.Date }}. {{.Title | markdownify }}. <a href="{{.URL}}" target="_blank">{{.URL}}</a>.</li>
+       <li>{{ time.Format "2006" .Date }}. {{.Title | markdownify }}. <a href="{{.URL}}" target="_blank">{{.URL}}</a>.</li>
        {{ end }}
     </ul>
 </div>
