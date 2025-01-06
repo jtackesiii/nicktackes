@@ -12,13 +12,13 @@
         {{ range sort (where .Site.Data.cv.Publications "Type" "Article") "Date" "desc"}}
        <li>{{ time.Format "2006" .Date }}. {{.Title | markdownify }} <a href="{{.URL}}" target="_blank">{{.URL}}.</a></li>
        {{ end }}
+       <h4>Scholarly Websites</h4>
+       {{ range sort (where .Site.Data.cv.Publications "Type" "Website") "Date" "desc"}}
+       <li>{{ time.Format "2006" .Date }}. {{.Title | markdownify }}. <a href="{{.URL}}" target="_blank">{{.URL}}</a>.</li>
+       {{ end }}
        <h4>Other</h4>
         {{ range sort (where .Site.Data.cv.Publications "Type" "Other") "Date" "desc"}}
        <li>{{ time.Format "2006" .Date }}. {{.Title | markdownify }} <a href="{{.URL}}" target="_blank">{{.URL}}.</a></li>
-       {{ end }}
-        <h4>Scholarly Websites</h4>
-        {{ range sort (where .Site.Data.cv.Publications "Type" "Website") "Date" "desc"}}
-       <li>{{ time.Format "2006" .Date }}. {{.Title | markdownify }}. <a href="{{.URL}}" target="_blank">{{.URL}}</a>.</li>
        {{ end }}
     </ul>
 </div>

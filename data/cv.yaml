@@ -241,6 +241,8 @@ Teaching:
   - Venue: Xavier University
     Courses:
      - Introduction to Theology
+     - Hinduism and Healing
+     - "World Religions: Hinduism"
 
   - Venue: Hamilton College
     Courses:
@@ -255,6 +257,38 @@ Teaching:
   - Venue: New York University
     Courses:
      - Religions of India
+
+Classes:
+
+  - Course: Introduction to Theology
+    Venues: [Xavier University]
+
+  - Course: Indian Buddhism
+    Venues: [Hamilton College]
+
+  - Course: Sacred Space in South Asia
+    Venues: [Hamilton College]
+
+  - Course: Hinduism and Healing
+    Venues: [Hamilton College, Xavier University]
+
+  - Course: Gurus, Godmen, Godwomen
+    Venues: [Hamilton College]
+
+  - Course: Mother Nature---Climate Crisis
+    Venues: [Hamilton College]
+
+  - Course: Religion and Healing in Global Perspective
+    Venues: [Hamilton College]
+
+  - Course: Encountering Hinduism
+    Venues: [Hamilton College]
+
+  - Course: "World Religions: Hinduism"
+    Venues: [Xavier University]
+
+  - Course: Religions of India
+    Venues: [New York University]
 
 TAing:
 
@@ -283,6 +317,12 @@ TAing:
     Role: Teaching Assistant
 
 Service:
+
+  - Beneficiary:
+    Role: Digital Resource Editor
+    Date: 2025
+    End: 2027
+    Venue: ASIANetwork
 
   - Beneficiary:
     Role: External Reviewer

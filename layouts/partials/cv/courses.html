@@ -6,4 +6,7 @@
     <div class="list">{{ . | markdownify }}</div>
     {{ end }}
     {{ end }}
+    <!-- {{range sort .Site.Data.cv.Classes }}
+    <div class="list">{{ .Course }} ({{ delimit .Venues ", "}})</div>
+    {{ end }} -->
 </div>
