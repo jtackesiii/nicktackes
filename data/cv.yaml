@@ -238,28 +238,6 @@ Memberships:
 
 Teaching:
 
-  - Venue: Xavier University
-    Courses:
-     - Introduction to Theology
-     - Hinduism and Healing
-     - "World Religions: Hinduism"
-
-  - Venue: Hamilton College
-    Courses:
-     - Indian Buddhism
-     - Sacred Space in South Asia
-     - Hinduism and Healing
-     - Gurus, Godmen, Godwomen
-     - Mother Nature---Climate Crisis
-     - Religion and Healing in Global Perspective
-     - Encountering Hinduism
-
-  - Venue: New York University
-    Courses:
-     - Religions of India
-
-Classes:
-
   - Course: Introduction to Theology
     Venues: [Xavier University]
 

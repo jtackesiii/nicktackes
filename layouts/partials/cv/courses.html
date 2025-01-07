@@ -1,12 +1,18 @@
 <div class="chunk" id="courses">
     <h3>Teaching</h3>
-    {{ range .Site.Data.cv.Teaching }}
-    <h4>At {{ .Venue }}</h4>
-    {{ range sort .Courses }}
-    <div class="list">{{ . | markdownify }}</div>
+    {{ $currentInstitution := newScratch}}
+    {{ $currentInstitution.Set "place" "Current Institution" }}
+    {{ range where .Site.Data.cv.Employment "Current" true }}{{ $currentInstitution.Set "place" .Venue }}{{end}}
+    <h4>At {{ $currentInstitution.Get "place" }}</h4>
+    {{range sort .Site.Data.cv.Teaching }}
+    <div class="list">
+        {{ if in .Venues ($currentInstitution.Get "place" ) }}{{ .Course }}{{ end }}
+    </div>
     {{ end }}
+    <h4>Elsewhere</h4>
+    {{range sort .Site.Data.cv.Teaching }}
+    <div class="list">
+        {{ if not (in .Venues ($currentInstitution.Get "place" )) }}{{ .Course }} ({{ delimit .Venues ", "}}){{ end }}
+    </div>
     {{ end }}
-    <!-- {{range sort .Site.Data.cv.Classes }}
-    <div class="list">{{ .Course }} ({{ delimit .Venues ", "}})</div>
-    {{ end }} -->
 </div>

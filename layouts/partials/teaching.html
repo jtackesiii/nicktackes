@@ -1,8 +1,24 @@
 <div id="teaching" class="hash">
   <h2 class="media-title">teaching</h2>
-  <p>{{ .Site.Data.teaching.description }}</p>
+  {{ range where .Site.Data.cv.Employment "Current" true }}
+  <p>I currently teach in the {{ .Department }} Department at {{ .Venue }}.</p>
+  {{end}}
+  {{ $currentInstitution := newScratch}}
+  {{ $currentInstitution.Set "place" "Current Institution" }}
+  {{ range where .Site.Data.cv.Employment "Current" true }}{{ $currentInstitution.Set "place" .Venue }}{{end}}
   <h3 class="teaching-heading">Current Courses:</h3>
-  <div class="course-grid">
+    <ul>
+      {{ range sort .Site.Data.cv.Teaching }}
+      {{ if in .Venues ($currentInstitution.Get "place" ) }}<li>{{ .Course }}</li>{{ end }}
+      {{ end }}
+    </ul>
+  <h3 class="teaching-heading">Past Courses</h3>
+    <ul>
+      {{ range sort .Site.Data.cv.Teaching }}
+      {{ if not (in .Venues ($currentInstitution.Get "place" )) }}<li>{{ .Course }} ({{ delimit .Venues ", "}})</li>{{ end }}
+      {{ end }}
+    </ul>
+  <!-- <div class="course-grid">
   {{ range where .Site.Data.teaching.courses "current" "==" true }}
     <img src="{{ .img }}">
   {{ end }}
@@ -12,5 +28,5 @@
        <ul>
         <li>{{ .course }}</li>
        </ul>
-  {{ end }}
+  {{ end }} -->
 </div>

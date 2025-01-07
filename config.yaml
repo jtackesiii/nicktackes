@@ -22,7 +22,6 @@ Params:
       icon: fab fa-github fa-lg
       label: github
 
-
   credits:
     This site is built on [Hugo](https://gohugo.io),
      hosted on [Github](https://github.com), and
