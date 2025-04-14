@@ -141,6 +141,10 @@
         margin-bottom: 0;
     }
 
+    #cv .padding {
+        padding-bottom: 1rem;
+    }
+
     @page {
         margin: 1in;
     }
