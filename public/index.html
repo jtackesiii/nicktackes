@@ -68,18 +68,18 @@
             
             
             
+                <p>Presented “An Exam on Indian Culture: The Gayatri Pariwar’s &lsquo;<em>bhāratīya saṁskr̥ti jñān parīkṣā</em>&rsquo;” at the American Academy of Religion Annual Meeting on November 22, 2025.</p>
+                
+                
+                
+            
+                
+                <p>Presented “Hindu Ethics in Comparison and in Practice” at Williams College of Business, Xavier University on October 13, 2025.</p>
+                
+                
+            
                 
                 <p>Presented “Spiritual Citizenship and Civic Responsibility” at Initiative for Civic Engagement, Xavier University on April 24, 2025.</p>
-                
-                
-            
-                
-                <p>Presented “An Introduction to Hindu Traditions and Ayurveda” at Xavier University on October 28, 2024.</p>
-                
-                
-            
-                <p>Presented “Mosque and Mandir: Boundary Work in the Indian City of Mathura” at the ASIANetwork Annual Conference on April 14, 2024.</p>
-                
                 
                 
             
@@ -156,6 +156,8 @@
   <h3 class="teaching-heading">Current Courses:</h3>
     <ul>
       
+      <li>The End of the World</li>
+      
       <li>Introduction to Theology</li>
       
       <li>Hindu Traditions and Women&#39;s Devotion</li>
@@ -166,7 +168,7 @@
       
       <li>Hinduism and Healing</li>
       
-      
+      <li>Gurus, Godmen, Godwomen</li>
       
       
       
@@ -186,13 +188,15 @@
       
       
       
+      
+      
       <li>Indian Buddhism (Hamilton College)</li>
       
       <li>Sacred Space in South Asia (Hamilton College)</li>
       
       
       
-      <li>Gurus, Godmen, Godwomen (Hamilton College)</li>
+      
       
       <li>Mother Nature---Climate Crisis (Hamilton College)</li>
       
@@ -214,7 +218,7 @@
   <div id="header">
  <p>Nick Tackes</p>
  <h1>Curriculum Vitæ</h3>
- <p>August 21, 2025</p>
+ <p>January 21, 2026</p>
 </div>
 
   <div id="contact">
@@ -442,9 +446,15 @@ Cincinnati, OH 45208
     <h3>Conferences and Invited Talks</h3>
     <ul>
     
+    <li class="chunk">“An Exam on Indian Culture: The Gayatri Pariwar’s &lsquo;<em>bhāratīya saṁskr̥ti jñān parīkṣā</em>&rsquo;,” Hinduism Unit, American Academy of Religion Annual Meeting, November 22, 2025.</li>
+    
+    <li class="chunk">Panel Organizer, “Educating Hindus,” Hinduism Unit, American Academy of Religion Annual Meeting, November 22, 2025.</li>
+    
+    <li class="chunk">Invited Speaker, “Hindu Ethics in Comparison and in Practice,” Williams College of Business, Xavier University, October 13, 2025.</li>
+    
     <li class="chunk">Invited Speaker, “Spiritual Citizenship and Civic Responsibility,” Initiative for Civic Engagement, Xavier University, April 24, 2025.</li>
     
-    <li class="chunk">Invited Speaker, “An Introduction to Hindu Traditions and Ayurveda,” Xavier University, October 28, 2024.</li>
+    <li class="chunk">Invited Speaker, “An Introduction to Hindu Traditions and Ayurveda,” College of Arts and Sciences, Xavier University, October 28, 2024.</li>
     
     <li class="chunk">“Mosque and Mandir: Boundary Work in the Indian City of Mathura,” ASIANetwork Annual Conference, April 14, 2024.</li>
     
@@ -494,6 +504,10 @@ Cincinnati, OH 45208
     <h4>At Xavier University</h4>
     
     <div class="list">
+        The End of the World
+    </div>
+    
+    <div class="list">
         Introduction to Theology
     </div>
     
@@ -514,7 +528,7 @@ Cincinnati, OH 45208
     </div>
     
     <div class="list">
-        
+        Gurus, Godmen, Godwomen
     </div>
     
     <div class="list">
@@ -548,6 +562,10 @@ Cincinnati, OH 45208
     </div>
     
     <div class="list">
+        
+    </div>
+    
+    <div class="list">
         Indian Buddhism (Hamilton College)
     </div>
     
@@ -560,7 +578,7 @@ Cincinnati, OH 45208
     </div>
     
     <div class="list">
-        Gurus, Godmen, Godwomen (Hamilton College)
+        
     </div>
     
     <div class="list">
@@ -660,7 +678,7 @@ Cincinnati, OH 45208
         <p>This site is built on <a href="https://gohugo.io">Hugo</a>, hosted on <a href="https://github.com">Github</a>, and served on <a href="https://netlify.com">Netlify</a>. Icons are by <a href="https://fontawesome.com">Fontawesome</a> and <a href="https://jpswalsh.github.io/academicons">Academicons</a>.</p>
         <button aria-label="close dialog" id="credits-close">&times;</button>
     </dialog>
-    <p id="copyright">© 2025 Nick Tackes</p>
+    <p id="copyright">© 2026 Nick Tackes</p>
 </div>
 
   </body>
@@ -678,7 +696,11 @@ Cincinnati, OH 45208
     const modalClose = document.querySelector("#credits-close");
     const modal = document.querySelector("#credits");
     modalOpen.addEventListener("click", () => {
-      modal.showModal();
+      if (modal.open) {
+        modal.close();
+      } else {
+        modal.show();
+      }
     });
     modalClose.addEventListener("click", () => {
       modal.close();

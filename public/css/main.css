@@ -163,7 +163,8 @@ nav ul {
     max-width: min(50ch, 90vw);
     border: none;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
+    position: absolute;
+    bottom: 3em;
 }
 
 #credits::backdrop {
