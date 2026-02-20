@@ -177,43 +177,20 @@ Conferences:
     Online: false
     Role: Panel Organizer
 
-  - Title: "Hindu Ethics in Comparison and in Practice"
-    Date: 2025-10-13
-    Venue: Williams College of Business, Xavier University
-    Role: Invited Speaker
-
-  - Title: "Spiritual Citizenship and Civic Responsibility"
-    Date: 2025-04-24
-    Venue: Initiative for Civic Engagement, Xavier University
-    Role: Invited Speaker
-
-  - Title: "An Introduction to Hindu Traditions and Ayurveda"
-    Date: 2024-10-28
-    Venue: College of Arts and Sciences, Xavier University
-    Role: Invited Speaker
-
   - Title: "Mosque and Mandir: Boundary Work in the Indian City of Mathura"
     Date: 2024-04-14
-    Unit: ""
     Venue: ASIANetwork Annual Conference
     Online: false
     Role: Panelist
 
-  - Title: "*Kaavad*, Storytelling, and Devotional Practices in India"
-    Date: 2024-03-28
-    Venue: Hamilton College Humanities Salon
-    Role: Invited Speaker
-
   - Title: "'Mathura is next': Nationalist Projections in Local Perspective"
     Date: 2022-11-09
-    Unit: ""
     Venue: American Anthropological Association Annual Meeting
     Online: false
     Role: Panelist
 
   - Title: "Natives, Foreigners, and Imagined Others in South Asian Religious Homelands"
     Date: 2022-11-09
-    Unit: ""
     Venue: American Anthropological Association Annual Meeting
     Online: false
     Role: Panel Organizer
@@ -231,11 +208,6 @@ Conferences:
     Venue: American Academy of Religion Annual Meeting
     Online: true
     Role: Panelist
-
-  - Title: "Energy and Vibrations: The Logic of Transformation in the Gayatri Pariwar and the Brahma Kumaris"
-    Date: 2020-03-12
-    Venue: Public Health Workshop, Jawaharlal Nehru University, New Delhi, India
-    Role: Invited Speaker
 
   - Title: "Marketing Religion: From Mathura to Madhuvan"
     Date: 2020-02-24
@@ -256,6 +228,33 @@ Conferences:
     Date: 2015-10-23
     Venue: Annual Conference on South Asia, Madison
     Role: Panelist
+
+Talks:
+
+  - Title: "Hinduism and Judaism: Perspectives on Ecology, Sustainability, and Community Responsibility"
+    Date: 2026-02-20
+    Venue: Xavier University
+
+  - Title: "Hindu Ethics in Comparison and in Practice"
+    Date: 2025-10-13
+    Venue: Williams College of Business, Xavier University
+
+  - Title: "Spiritual Citizenship and Civic Responsibility"
+    Date: 2025-04-24
+    Venue: Initiative for Civic Engagement, Xavier University
+
+  - Title: "An Introduction to Hindu Traditions and Ayurveda"
+    Date: 2024-10-28
+    Venue: College of Arts and Sciences, Xavier University
+
+  - Title: "*Kaavad*, Storytelling, and Devotional Practices in India"
+    Date: 2024-03-28
+    Venue: Hamilton College Humanities Salon
+
+  - Title: "Energy and Vibrations: The Logic of Transformation in the Gayatri Pariwar and the Brahma Kumaris"
+    Date: 2020-03-12
+    Venue: Public Health Workshop, Jawaharlal Nehru University, New Delhi, India
+
 
 Memberships:
   - American Academy of Religion
