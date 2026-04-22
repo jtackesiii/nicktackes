@@ -9,10 +9,10 @@ Params:
     landing: "about"
 
   social:
-    - URL: mailto:jtackes@hamilton.edu
+    - URL: mailto:ntacke2@lsu.edu
       icon: fas fa-envelope fa-lg
       label: email
-    - URL: https://columbia.academia.edu/NickTackes/
+    - URL: https://lsu.academia.edu/NickTackes/
       icon: ai ai-academia fa-lg
       label: academia.edu
     - URL: https://orcid.org/0009-0008-7460-3126
@@ -21,10 +21,3 @@ Params:
     - URL: https://github.com/jtackesiii
       icon: fab fa-github fa-lg
       label: github
-
-  credits:
-    This site is built on [Hugo](https://gohugo.io),
-     hosted on [Github](https://github.com), and
-    served on [Netlify](https://netlify.com). Icons
-    are by [Fontawesome](https://fontawesome.com) and
-    [Academicons](https://jpswalsh.github.io/academicons).
