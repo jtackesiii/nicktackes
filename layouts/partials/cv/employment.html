@@ -1,6 +1,6 @@
 <div class="chunk" id="employment">
   <h3>Employment</h3>
-  {{ range sort .Site.Data.cv.Employment "Date" "desc" }}
+  {{ range sort hugo.Data.cv.Employment "Date" "desc" }}
   <div class="grid columns-3 row">
     <div class="list">
       {{ $start := time.Format "2006" .Start }}

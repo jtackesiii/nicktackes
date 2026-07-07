@@ -1,6 +1,6 @@
 <div class="chunk" id="service">
     <h3>Academic Service</h3>
-    {{ range where .Site.Data.cv.Service "Role" "!=" "External Reviewer" }}
+    {{ range where hugo.Data.cv.Service "Role" "!=" "External Reviewer" }}
     <div class="grid columns-3 row">
         <div class="list">
             {{ .Date }}
@@ -13,7 +13,7 @@
     </div>
     {{ end }}
     <h4>External Reviewer</h4>
-    {{ range where .Site.Data.cv.Service "Role" "External Reviewer" }}
+    {{ range where hugo.Data.cv.Service "Role" "External Reviewer" }}
     <div class="list">
         {{ .Venue }}
     </div>

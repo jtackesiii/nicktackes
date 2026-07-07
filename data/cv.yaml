@@ -1,21 +1,25 @@
 Work: |-
-  313 Hinkle Hall
-  Xavier University
-  3600 Victory Parkway
-  Cincinnati, OH 45207
+  105 Coates Hall
+  Louisiana State University
+  Baton Rouge, LA 70803
 
 Home: |-
-  3640 Burch Avenue
-  Cincinnati, OH 45208
+  2009 Stanford Avenue
+  Baton Rouge, LA 70808
 
 Employment:
+
+  - Start: 2026-08-13
+    Role: Assistant Professor
+    Department: Philosophy and Religious Studies
+    Venue: Louisiana State University
+    Current: true
 
   - Start: 2024-08-13
     End: 2027-07-30
     Role: Besl Family Chair for Ethics, Religion, and Society
     Department: Theology
     Venue: Xavier University
-    Current: true
 
   - Start: 2023-07-01
     End: 2024-06-30
@@ -275,6 +279,9 @@ Memberships:
 
 Teaching:
 
+  - Course: Asian Religions
+    Venues: [Louisiana State University]
+
   - Course: The End of the World
     Venues: [Xavier University]
 
@@ -294,7 +301,7 @@ Teaching:
     Venues: [Hamilton College, Xavier University]
 
   - Course: Gurus, Godmen, Godwomen
-    Venues: [Hamilton College, Xavier University]
+    Venues: [Hamilton College, Xavier University, Louisiana State University]
 
   - Course: Mother Nature---Climate Crisis
     Venues: [Hamilton College]

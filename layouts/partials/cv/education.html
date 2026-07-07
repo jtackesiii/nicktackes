@@ -1,6 +1,6 @@
 <div class="chunk" id="education">
     <h3>Education</h3>
-    {{ range where .Site.Data.cv.Education "Data-only" "!=" true }}
+    {{ range where hugo.Data.cv.Education "Data-only" "!=" true }}
        <div class="grid columns-4">
            <div class="list">{{if .Pending }}({{ time.Format "2006" .Date }}){{else}}{{ time.Format "2006" .Date }}{{end}}</div>
            <div class="list">{{ .Degree }}</div>
@@ -15,7 +15,7 @@
         {{end}}
     {{ end }}
     <h4>Certificates</h4>
-    {{ range sort .Site.Data.cv.Certificates "Date" "desc" }}
+    {{ range sort hugo.Data.cv.Certificates "Date" "desc" }}
     <div class="grid columns-3 row">
         <div class="list">{{ time.Format "2006" .Date }}</div>
         <div class="list">{{ .Entity }}<br>{{ .Accreditation }}</div>
@@ -23,7 +23,7 @@
     </div>
     {{ end }}
     <h4>Other Training</h4>
-    {{ range sort .Site.Data.cv.OtherEducation "Date" "desc" }}
+    {{ range sort hugo.Data.cv.OtherEducation "Date" "desc" }}
     <div class="grid columns-2 row">
         <div class="list">{{ time.Format "2006" .Date }}</div>
         <div class="list">{{ .Accreditation }}<br>{{ .Entity }}</div>

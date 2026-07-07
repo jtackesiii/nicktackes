@@ -4,7 +4,7 @@
     <div id="news">
         <h2>news</h2>
             {{ $list := slice }}
-            {{ with .Site.Data.cv }}
+            {{ with hugo.Data.cv }}
             {{ $list := append $list .Awards }}
             {{ $list := append $list .Talks }}
             {{ $list := append $list (where .Publications "Draft" "!=" true) }}
@@ -22,12 +22,12 @@
     <div id="projects">
         <h2>projects</h2>
         <ul class="project-list">
-            {{ range sort .Site.Data.research "Date" "desc"}}
+            {{ range sort hugo.Data.research "Date" "desc"}}
             <li><a class="research-toggle" href="#{{ .Title | anchorize }}">{{ .Title }}</a></li>
             {{ end }}
         </ul>
 
-        {{ range sort .Site.Data.research "Date" "desc"}}
+        {{ range sort hugo.Data.research "Date" "desc"}}
         <div id="{{ .Title | anchorize }}" class="research-project">
             <h3>{{ .Title }}</h3>
             <div class="tags">

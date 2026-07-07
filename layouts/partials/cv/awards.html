@@ -1,6 +1,6 @@
 <div class="chunk" id="awards">
     <h3>Competitive Scholarships and Honors</h3>
-    {{ range sort .Site.Data.cv.Awards "Date" "desc" }}
+    {{ range sort hugo.Data.cv.Awards "Date" "desc" }}
     <div class="grid columns-2">
         <div class="list">{{ time.Format "2006" .Date }}</div>
         <div class="list">{{ .Title }}</div>
