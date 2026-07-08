@@ -8,13 +8,13 @@
   {{ range where hugo.Data.cv.Employment "Current" true }}{{ $currentInstitution.Set "place" .Venue }}{{end}}
   <h3 class="teaching-heading">Current Courses:</h3>
     <ul>
-      {{ range sort hugo.Data.cv.Teaching }}
+      {{ range sort hugo.Data.cv.Teaching "Course" }}
       {{ if in .Venues ($currentInstitution.Get "place" ) }}<li>{{ .Course }}</li>{{ end }}
       {{ end }}
     </ul>
   <h3 class="teaching-heading">Past Courses</h3>
     <ul>
-      {{ range sort hugo.Data.cv.Teaching }}
+      {{ range sort hugo.Data.cv.Teaching "Course" }}
       {{ if not (in .Venues ($currentInstitution.Get "place" )) }}<li>{{ .Course }} ({{ delimit .Venues ", "}})</li>{{ end }}
       {{ end }}
     </ul>
